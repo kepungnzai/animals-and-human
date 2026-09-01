@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animal Discovery HQ — Amazing Animal News for Curious Kids (Ages 8–9)</title>
+  <meta name="description" content="Kid-friendly animal news: meet a brand-new snake species, a deep-sea cutie, a healing axolotl and a tiny dancer, then take the big quiz!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+  <header class="topbar">
+    <a href="#top" class="brand"><span class="brand-emoji">🔬</span>Animal Discovery <em>HQ</em></a>
+    <nav class="topnav" aria-label="Page sections">
+      <a href="#featured">✨ Featured</a>
+      <a href="#friends">🐾 Animal Pals</a>
+      <a href="#dives">📚 Deep Dives</a>
+      <a href="#quiz" class="nav-quiz">🧠 Big Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="sun"><span class="sun-core">☀️</span></div>
+      <div class="cloud cloud--1"><span>☁</span></div>
+      <div class="cloud cloud--2"><span>☁</span></div>
+
+      <div class="hero-floaters" aria-hidden="true">
+        <span class="floater floater--1">🦋</span>
+        <span class="floater floater--2">🐙</span>
+        <span class="floater floater--3">🐍</span>
+        <span class="floater floater--4">🐢</span>
+        <span class="floater floater--5">🦜</span>
+        <span class="floater floater--6">🐠</span>
+      </div>
+
+      <h1 class="hero-title">Meet the <mark>WOW</mark> animals<br><mark class="mark--blue">discovered right now!</mark></h1>
+      <p class="hero-sub">
+        Scientists find brand-new things about animals all the time! 👇
+        Say hello to a <strong>whole new snake species</strong>, a cute deep-sea puzzler,
+        a little healer, and a rainbow dancer. Then prove your brain with the <strong>Big Quiz</strong>!
+      </p>
+      <div class="hero-actions">
+        <a href="#featured" class="btn btn--warm">🚨 Meet the Featured Animal</a>
+        <a href="#quiz" class="btn btn--cool">🧠 Skip to the Quiz</a>
+      </div>
+      <p class="hero-tip">Scroll down — the animals are waiting for you! 👇</p>
+
+      <svg class="wave-divider" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="var(--page-card)" d="M0,64 C240,110 480,10 720,42 C960,74 1200,6 1440,52 L1440,110 L0,110 Z"></path>
+      </svg>
+    </section>
+
+    <!-- ================= FEATURED ANIMAL ================= -->
+    <section class="section featured" id="featured">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Brand-new discovery &middot; 2024</p>
+        <h2>&#11088; Featured Animal of the Week</h2>
+        <p class="section-sub">Scientists announced a WHOLE NEW snake species. Let&rsquo;s meet her!</p>
+      </div>
+
+      <article class="featured-card" data-reveal>
+        <div class="featured-art">
+          <span class="badge-super">&#10024; SUPER NEW! &#10024;</span>
+          <svg viewBox="0 0 420 300" role="img" aria-label="A cute green anaconda swimming in the Amazon river">
+            <defs>
+              <linearGradient id="anaconda-water" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#7ef0d7"/>
+                <stop offset="1" stop-color="#27a8d8"/>
+              </linearGradient>
+              <radialGradient id="anaconda-body" cx=".5" cy=".5" r=".6">
+                <stop offset="0" stop-color="#53c25c"/>
+                <stop offset="1" stop-color="#2e8f3f"/>
+              </radialGradient>
+              <linearGradient id="anaconda-head" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4cbc58"/>
+                <stop offset="1" stop-color="#2a8a3c"/>
+              </linearGradient>
+            </defs>
+            <rect width="420" height="300" fill="url(#anaconda-water)"/>
+            <ellipse cx="210" cy="284" rx="200" ry="22" fill="#1a7c9e" opacity=".35"/>
+            <ellipse class="bubble bubble--1" cx="70" cy="120" r="8" fill="#ffffff" opacity=".7"/>
+            <ellipse class="bubble bubble--2" cx="95" cy="90" r="5" fill="#ffffff" opacity=".6"/>
+            <ellipse class="bubble bubble--3" cx="330" cy="110" r="6" fill="#ffffff" opacity=".6"/>
+            <ellipse class="bubble bubble--4" cx="350" cy="80" r="4" fill="#ffffff" opacity=".5"/>
+            <path class="snake-tail-anim" d="M 60 262 C 52 236 56 214 80 200" fill="none" stroke="url(#anaconda-body)" stroke-width="30" stroke-linecap="round"/>
+            <path d="M 78 196 C 96 160 150 152 196 168 C 234 182 288 196 322 188 C 350 182 366 166 370 148" fill="none" stroke="url(#anaconda-body)" stroke-width="30" stroke-linecap="round"/>
+            <circle cx="120" cy="190" r="5" fill="#1c6b30" opacity=".8"/>
+            <circle cx="170" cy="185" r="4" fill="#1c6b30" opacity=".8"/>
+            <circle cx="298" cy="186" r="5" fill="#1c6b30" opacity=".8"/>
+            <circle cx="252" cy="184" r="4" fill="#1c6b30" opacity=".8"/>
+            <circle cx="388" cy="138" r="17" fill="url(#anaconda-head)"/>
+            <circle cx="394" cy="128" r="3.4" fill="#1c3b24"/>
+            <circle cx="395.5" cy="126.5" r="1.2" fill="#ffffff"/>
+            <path d="M 402 142 l 15 7 M 402 142 l 13 14" stroke="#e0492f" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="art-caption">&#128013; &ldquo;Nina&rdquo; &middot; the new species</span>
+        </div>
+
+        <div class="featured-body">
+          <h3>Meet <em>Nina</em> the Northern Green Anaconda &#128013;</h3>
+          <p class="discovery-lead">
+            In <strong>February 2024</strong>, scientists studying anacondas in the Amazon River made a big
+            discovery &mdash; the northern green anacondas are a <em>brand-new species</em>! They look almost
+            the same on the outside, but a secret science tool called <strong>DNA</strong> shows they are
+            different. It&rsquo;s like finding out a whole new family was hiding right under our noses!
+          </p>
+
+          <ul class="fact-cards">
+            <li class="fact-card fact-card--mint">
+              <span class="fact-emoji">&#128207;</span>
+              <strong>Up to 26 ft long</strong>
+              <span>That&rsquo;s as long as 4 kids lying head-to-toe!</span>
+            </li>
+            <li class="fact-card fact-card--peach">
+              <span class="fact-emoji">&#127754;</span>
+              <strong>King of the river</strong>
+              <span>Loves the Amazon like a giant swimming pool!</span>
+            </li>
+            <li class="fact-card">
+              <span class="fact-emoji">&#128170;</span>
+              <strong>Super-squeeze hug</strong>
+              <span>It&rsquo;s a constrictor &mdash; no poison, just a strong hug!</span>
+            </li>
+          </ul>
+
+          <div class="owl-box">
+            <h4>&#129513; Wow Facts</h4>
+            <ul>
+              <li><strong>DNA magic:</strong> the new species looks almost the same, but its DNA is different &mdash; that&rsquo;s how scientists cracked the case!</li>
+              <li><strong>The heaviest:</strong> green anacondas are among the heaviest snakes on the planet.</li>
+              <li><strong>Teamwork:</strong> scientists worked together with local Waorani people to make this amazing discovery possible!</li>
+            </ul>
+          </div>
+          <div class="featured-cta">
+            <p>Fun fact: Nina has <strong>NO venom</strong> &mdash; she&rsquo;s a super-squeezer! But many snakes DO make venom&hellip; and humans turn it into medicine!</p>
+            <a class="btn btn--warm" href="snake-antivenom.html">&#128013; How Does Venom Become Antivenom?</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ================= ANIMAL PALS ================= -->
+    <section class="section friends" id="friends">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">These animals were in the news too!</p>
+        <h2>&#128062; A Few More Amazing Pals</h2>
+        <p class="section-sub">Tap a card to flip it and find the surprise on the back!</p>
+      </div>
+
+      <div class="card-grid">
+
+        <!-- Dumbo octopus card -->
+        <article class="animal-card" data-reveal>
+          <div class="animal-card-inner">
+            <div class="card-face card-front">
+              <span class="card-tag">&#128240; New sighting &middot; March 2025</span>
+              <div class="card-art">
+                <svg viewBox="0 0 420 320" role="img" aria-label="A cute dumbo octopus floating in the deep sea">
+                  <defs>
+                    <linearGradient id="dumbo-sea" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#1c3f86"/>
+                      <stop offset="1" stop-color="#081a3d"/>
+                    </linearGradient>
+                    <radialGradient id="dumbo-body" cx=".5" cy=".4" r=".7">
+                      <stop offset="0" stop-color="#d48aff"/>
+                      <stop offset="1" stop-color="#9b5de5"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="420" height="320" fill="url(#dumbo-sea)"/>
+                  <ellipse class="bubble bubble--1" cx="90" cy="130" r="7" fill="#9fd8ff" opacity=".5"/>
+                  <ellipse class="bubble bubble--2" cx="330" cy="90" r="5" fill="#9fd8ff" opacity=".5"/>
+                  <g class="dumbo-ear dumbo-ear--left">
+                    <ellipse cx="126" cy="80" rx="56" ry="30" fill="#b069e8" transform="rotate(-16 126 80)"/>
+                    <ellipse cx="132" cy="82" rx="34" ry="16" fill="#cf9bff" opacity=".6" transform="rotate(-16 132 82)"/>
+                  </g>
+                  <g class="dumbo-ear">
+                    <ellipse cx="294" cy="80" rx="56" ry="30" fill="#b069e8" transform="rotate(16 294 80)"/>
+                    <ellipse cx="288" cy="82" rx="34" ry="16" fill="#cf9bff" opacity=".6" transform="rotate(16 288 82)"/>
+                  </g>
+                  <ellipse cx="210" cy="150" rx="100" ry="108" fill="url(#dumbo-body)"/>
+                  <circle class="dumbo-eye" cx="172" cy="130" r="15" fill="#ffffff"/>
+                  <circle cx="172" cy="130" r="7" fill="#2a1a4a"/>
+                  <circle cx="175" cy="127" r="2.6" fill="#ffffff"/>
+                  <circle class="dumbo-eye" cx="248" cy="130" r="15" fill="#ffffff"/>
+                  <circle cx="248" cy="130" r="7" fill="#2a1a4a"/>
+                  <circle cx="251" cy="127" r="2.6" fill="#ffffff"/>
+                  <ellipse cx="150" cy="162" rx="10" ry="6" fill="#ff8ac7" opacity=".7"/>
+                  <ellipse cx="270" cy="162" rx="10" ry="6" fill="#ff8ac7" opacity=".7"/>
+                  <path d="M 190 178 Q 210 192 232 174" stroke="#5a2d91" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+                  <path d="M 160 254 C 160 284 140 296 148 320" stroke="#8f4fd6" stroke-width="12" stroke-linecap="round" fill="none"/>
+                  <path d="M 192 260 C 192 288 174 300 180 322" stroke="#8f4fd6" stroke-width="12" stroke-linecap="round" fill="none"/>
+                  <path d="M 228 260 C 230 288 216 300 222 322" stroke="#8f4fd6" stroke-width="12" stroke-linecap="round" fill="none"/>
+                  <path d="M 260 254 C 264 282 250 296 256 320" stroke="#8f4fd6" stroke-width="12" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+              <h3>Dumbo Octopus &#128025;</h3>
+              <p class="card-tagline">The deepest-living octopus floats like a soft balloon in the dark sea.</p>
+              <p class="card-hint">Tap to flip</p>
+            </div>
+            <div class="card-face card-back">
+              <span class="tap-emoji">&#128025;</span>
+              <h4>Surprise!</h4>
+              <p>Named after <em>Dumbo the elephant</em> because of its two ear-like fins! It is the
+              <strong>deepest-living octopus</strong> known &mdash; up to 7 km down. The newest sighting was in
+              the <strong>Gulf of Guinea in March 2025</strong>.</p>
+              <p class="dive-link-row"><a class="dive-link" href="dumbo-octopus.html">&#128640; Dive deeper: how does Dumbo survive the deep sea?</a></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Axolotl card -->
+        <article class="animal-card" data-reveal>
+          <div class="animal-card-inner">
+            <div class="card-face card-front">
+              <span class="card-tag">&#128240; Healing science</span>
+              <div class="card-art">
+                <svg viewBox="0 0 420 300" role="img" aria-label="A cute pink axolotl with feathery gills">
+                  <defs>
+                    <linearGradient id="axo-water" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#bfeeff"/>
+                      <stop offset="1" stop-color="#eafbff"/>
+                    </linearGradient>
+                    <radialGradient id="axo-body" cx=".5" cy=".45" r=".65">
+                      <stop offset="0" stop-color="#ffc8db"/>
+                      <stop offset="1" stop-color="#ff8fb0"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="420" height="300" fill="url(#axo-water)"/>
+                  <ellipse class="bubble bubble--1" cx="80" cy="120" r="7" fill="#ffffff" opacity=".7"/>
+                  <ellipse class="bubble bubble--2" cx="340" cy="100" r="5" fill="#ffffff" opacity=".6"/>
+                  <ellipse class="bubble bubble--3" cx="360" cy="160" r="4" fill="#ffffff" opacity=".5"/>
+                  <path d="M 290 182 C 330 152 378 150 398 184 C 372 210 328 214 298 206 Z" fill="#ff8fb0"/>
+                  <path d="M 300 194 C 332 178 362 178 386 192" stroke="#ff6f96" stroke-width="4" stroke-linecap="round" fill="none"/>
+                  <g class="gill">
+                    <path d="M 138 158 L 100 122" stroke="#ff7f9e" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="100" cy="122" r="11" fill="#ff7f9e"/>
+                    <path d="M 138 162 L 86 158" stroke="#ff7f9e" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="86" cy="158" r="11" fill="#ff7f9e"/>
+                    <path d="M 138 166 L 106 194" stroke="#ff7f9e" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="106" cy="194" r="11" fill="#ff7f9e"/>
+                  </g>
+                  <g class="gill">
+                    <path d="M 282 158 L 320 122" stroke="#ff7f9e" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="320" cy="122" r="11" fill="#ff7f9e"/>
+                    <path d="M 282 162 L 334 158" stroke="#ff7f9e" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="334" cy="158" r="11" fill="#ff7f9e"/>
+                    <path d="M 282 166 L 314 194" stroke="#ff7f9e" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="314" cy="194" r="11" fill="#ff7f9e"/>
+                  </g>
+                  <ellipse cx="210" cy="182" rx="100" ry="58" fill="url(#axo-body)"/>
+                  <ellipse cx="210" cy="192" rx="70" ry="32" fill="#ffd9e6" opacity=".8"/>
+                  <ellipse cx="172" cy="216" rx="14" ry="8" fill="#ff6f96" transform="rotate(-10 172 216)"/>
+                  <ellipse cx="248" cy="216" rx="14" ry="8" fill="#ff6f96" transform="rotate(10 248 216)"/>
+                  <circle cx="176" cy="142" r="8" fill="#3b2140"/>
+                  <circle cx="244" cy="142" r="8" fill="#3b2140"/>
+                  <circle cx="179" cy="139" r="2.6" fill="#ffffff"/>
+                  <circle cx="247" cy="139" r="2.6" fill="#ffffff"/>
+                  <ellipse cx="156" cy="168" rx="9" ry="5" fill="#ff5eae" opacity=".55"/>
+                  <ellipse cx="264" cy="168" rx="9" ry="5" fill="#ff5eae" opacity=".55"/>
+                  <path d="M 196 176 Q 210 190 226 176" stroke="#8a3a55" stroke-width="4" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+              <h3>Axolotl &#129422;</h3>
+              <p class="card-tagline">The &ldquo;Mexican walking fish&rdquo; &mdash; though it&rsquo;s not a fish at all!</p>
+              <p class="card-hint">Tap to flip</p>
+            </div>
+            <div class="card-face card-back">
+              <span class="tap-emoji">&#129422;</span>
+              <h4>Surprise!</h4>
+              <p>This pink little cutie can regrow its <em>legs, tail and gills</em> &mdash; even parts of its <em>heart and brain</em>! Wild ones live in only <strong>ONE lake system</strong> in Mexico, so they are <strong>critically endangered</strong>. Scientists study them to help people heal too!</p>
+              <p class="dive-link-row"><a class="dive-link" href="axolotl-regeneration.html">&#129504; Regrow with it: how does the axolotl grow body parts back?</a></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Peacock spider card -->
+        <article class="animal-card" data-reveal>
+          <div class="animal-card-inner">
+            <div class="card-face card-front">
+              <span class="card-tag">&#128240; New species still found each year</span>
+              <div class="card-art">
+                <svg viewBox="0 0 420 320" role="img" aria-label="A tiny peacock spider dancing with a rainbow fan">
+                  <defs>
+                    <linearGradient id="peacock-bg" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#e8f6ff"/>
+                      <stop offset="1" stop-color="#fdf4ff"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="420" height="320" fill="url(#peacock-bg)"/>
+                  <text class="note-float" x="120" y="80" font-size="26">&#127925;</text>
+                  <text class="note-float note-float--2" x="290" y="70" font-size="22">&#127925;</text>
+                  <text class="note-float note-float--3" x="330" y="140" font-size="18">&#127925;</text>
+                  <ellipse cx="210" cy="300" rx="90" ry="12" fill="#1e3c5a" opacity=".15"/>
+                  <g class="peacock-dance">
+                    <path d="M 92 150 A 118 118 0 0 1 328 150 Z" fill="#e6b8ff" opacity=".5"/>
+                    <g transform="rotate(-72 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#9b5de5"/></g>
+                    <g transform="rotate(-48 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#2c9df0"/></g>
+                    <g transform="rotate(-24 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#35c58b"/></g>
+                    <g transform="rotate(0 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#ffd93b"/></g>
+                    <g transform="rotate(24 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#ff8b3e"/></g>
+                    <g transform="rotate(48 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#ff5eae"/></g>
+                    <g transform="rotate(72 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#ff3b6b"/></g>
+                    <path d="M 200 238 C 176 218 168 190 178 168" stroke="#4b2e2a" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    <path d="M 220 238 C 244 218 252 190 242 168" stroke="#4b2e2a" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    <path d="M 198 252 C 182 262 172 274 174 284" stroke="#4b2e2a" stroke-width="5" stroke-linecap="round" fill="none"/>
+                    <path d="M 222 252 C 238 262 248 274 246 284" stroke="#4b2e2a" stroke-width="5" stroke-linecap="round" fill="none"/>
+                    <ellipse cx="210" cy="250" rx="16" ry="19" fill="#4b2e2a"/>
+                    <ellipse cx="210" cy="232" rx="12" ry="10" fill="#155e9c"/>
+                    <circle cx="203" cy="230" r="3.4" fill="#ffffff"/>
+                    <circle cx="210" cy="226" r="3.4" fill="#ffffff"/>
+                    <circle cx="217" cy="230" r="3.4" fill="#ffffff"/>
+                    <circle cx="206" cy="234" r="1.6" fill="#1c1c1c"/>
+                    <circle cx="214" cy="234" r="1.6" fill="#1c1c1c"/>
+                  </g>
+                </svg>
+              </div>
+              <h3>Peacock Spider &#128375;</h3>
+              <p class="card-tagline">A tiny dancer that flashes a rainbow fan &mdash; smaller than a grain of rice!</p>
+              <p class="card-hint">Tap to flip</p>
+            </div>
+            <div class="card-face card-back">
+              <span class="tap-emoji">&#128375;</span>
+              <h4>Surprise!</h4>
+              <p>Only the <em>males</em> are rainbow-coloured &mdash; they <strong>dance and raise their colourful flaps</strong>
+              to impress females! They are only about <strong>4&ndash;5 mm long</strong>, and more than
+              <strong>100 species</strong> are known. Scientists keep finding <strong>new dancing spiders</strong> in Australia every year.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= MINI DEEP-DIVES ================= -->
+    <section class="section dives-section" id="dives">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128218; Pick your adventure</p>
+        <h2>&#129514; Mini Deep-Dive Pages</h2>
+        <p class="section-sub">Want to learn even more? Tap a mini-lesson below!</p>
+      </div>
+
+      <div class="dives-grid" data-reveal>
+        <a href="dumbo-octopus.html" class="dive-card">
+          <span class="dive-emoji">&#128025;</span>
+          <h3>Dumbo Octopus</h3>
+          <p>What body parts let it survive the crushing deep sea?</p>
+          <span class="dive-btn">Dive in! &#8594;</span>
+        </a>
+        <a href="axolotl-regeneration.html" class="dive-card">
+          <span class="dive-emoji">&#129422;</span>
+          <h3>Axolotl Regeneration</h3>
+          <p>Why can it regrow its body parts &mdash; and what can&rsquo;t it?</p>
+          <span class="dive-btn">Regrow with it! &#8594;</span>
+        </a>
+        <a href="snake-antivenom.html" class="dive-card">
+          <span class="dive-emoji">&#128013;</span>
+          <h3>Snake Venom &rarr; Medicine</h3>
+          <p>How do humans turn snake venom into life-saving antivenom?</p>
+          <span class="dive-btn">Visit the lab! &#8594;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= BIG QUIZ ================= -->
+    <section class="section quiz-section" id="quiz" data-reveal>
+      <div class="section-head">
+        <p class="eyebrow">Are you ready, explorer?</p>
+        <h2>&#129504; The Big Animal Quiz</h2>
+        <p class="section-sub">6 questions about our animals. Pick an answer &mdash; right or wrong, you always learn something new!</p>
+      </div>
+      <div class="quiz-shell" id="quizBox" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p>Made with &#128153; for curious kids aged 8&ndash;9.</p>
+    <p class="foot-note">Facts checked against real science news from 2024&ndash;2025. Keep asking questions &mdash; science is for everyone!</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naked Mole-Rat: The Underground Super-Scientist — Superpowers for Curious Kids (Ages 8–9)</title>
+  <meta name="description" content="Meet the naked mole-rat: nearly cancer-proof, it survives 18 minutes with no oxygen, and barely seems to age! Learn what scientists found — and what they are engineering from it — then take the quiz!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="molerat.css">
+</head>
+<body id="top">
+
+  <header class="topbar">
+    <a href="index.html#top" class="brand"><span class="brand-emoji">&#128053;</span>Mole-Rat <em>Underground Lab</em></a>
+    <nav class="topnav" aria-label="Page sections">
+      <a href="index.html">&#127968; Home</a>
+      <a href="#meet">&#128053; Meet the Mole-Rat</a>
+      <a href="#superpowers">&#11088; Superpowers</a>
+      <a href="#engineering">&#128295; Science Lab</a>
+      <a href="#quiz" class="nav-quiz">&#129504; Mini Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="mole-hero" id="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Sub-page &middot; Animal super-science</p>
+        <h1>Naked Mole-Rat: <mark>The Underground</mark> Super-Scientist</h1>
+        <p class="hero-sub">
+          It&rsquo;s pink, wrinkly, nearly hairless &mdash; and it&rsquo;s packed with super-powers!
+          It <strong>almost never gets cancer</strong>, can survive <strong>18 minutes with NO oxygen</strong>,
+          and lives longer than any other rodent. Scientists are so amazed they&rsquo;re trying to
+          <strong>borrow its tricks to help people</strong>!
+        </p>
+        <div class="hero-actions">
+          <a href="#superpowers" class="btn btn--warm">&#11088; See the Superpowers</a>
+          <a href="#engineering" class="btn btn--cool">&#128295; What Are We Building?</a>
+        </div>
+        <p class="hero-badge">&#128240; In 2023, scientists lent its cancer-fighting gene to mice!</p>
+      </div>
+
+      <svg class="hero-mole-svg" viewBox="0 0 520 420" role="img" aria-label="Cutaway of an underground burrow: a pink naked mole-rat with big front teeth peeks out of a tunnel under the grass">
+        <defs>
+          <linearGradient id="mr-sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#9fdcff"/>
+            <stop offset="1" stop-color="#dff3ff"/>
+          </linearGradient>
+          <linearGradient id="mr-dirt" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#b98a4a"/>
+            <stop offset=".5" stop-color="#96662f"/>
+            <stop offset="1" stop-color="#6e4518"/>
+          </linearGradient>
+          <radialGradient id="mr-skin" cx=".5" cy=".4" r=".7">
+            <stop offset="0" stop-color="#ffc1cf"/>
+            <stop offset="1" stop-color="#f08ba4"/>
+          </radialGradient>
+        </defs>
+
+        <!-- sky -->
+        <rect width="520" height="150" fill="url(#mr-sky)"/>
+        <circle cx="80" cy="45" r="26" fill="#ffd94d"/>
+        <path d="M 0 150 Q 130 132 260 150 Q 390 168 520 148 L 520 158 L 0 158 Z" fill="#6fbf4a"/>
+
+        <!-- dirt -->
+        <rect y="150" width="520" height="270" fill="url(#mr-dirt)"/>
+        <ellipse cx="90" cy="190" rx="8" ry="5" fill="#5e3a14" opacity=".5"/>
+        <ellipse cx="450" cy="220" rx="6" ry="4" fill="#5e3a14" opacity=".5"/>
+        <ellipse cx="300" cy="330" rx="9" ry="5" fill="#5e3a14" opacity=".4"/>
+        <path d="M 60 360 Q 80 340 95 358 M 410 320 Q 430 300 445 318" stroke="#5e3a14" stroke-width="4" stroke-linecap="round" fill="none" opacity=".5"/>
+
+        <!-- root -->
+        <path d="M 120 150 Q 115 200 128 250 Q 138 290 126 330" stroke="#7a4a22" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <path d="M 400 150 Q 408 210 396 260" stroke="#8a5a28" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+        <!-- tunnel cutaway -->
+        <ellipse cx="260" cy="300" rx="210" ry="110" fill="#3a2208"/>
+        <ellipse cx="260" cy="300" rx="200" ry="100" fill="#4a2e10"/>
+
+        <!-- mole-rat -->
+        <g class="mr-rat">
+          <!-- tail -->
+          <path d="M 224 330 q -20 8 -18 22" stroke="url(#mr-skin)" stroke-width="9" stroke-linecap="round" fill="none"/>
+          <!-- body -->
+          <ellipse cx="255" cy="305" rx="40" ry="30" fill="url(#mr-skin)"/>
+          <!-- belly -->
+          <ellipse cx="255" cy="315" rx="24" ry="16" fill="#ffd6e0" opacity=".8"/>
+          <!-- head -->
+          <circle cx="286" cy="276" r="24" fill="url(#mr-skin)"/>
+          <!-- ear(no fur, little rim) -->
+          <circle cx="270" cy="256" r="6" fill="#e57a97"/>
+          <!-- eye -->
+          <circle cx="296" cy="270" r="2.4" fill="#3a1a22"/>
+          <!-- buck teeth -->
+          <rect x="304" y="284" width="5" height="10" rx="1" fill="#fff"/>
+          <rect x="311" y="284" width="5" height="10" rx="1" fill="#fff"/>
+          <!-- whiskers -->
+          <path d="M 300 282 q 14 0 24 6 M 300 286 q 16 2 22 10" stroke="#e57a97" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- front paw/arm -->
+          <path d="M 262 322 q 6 8 2 14" stroke="#f08ba4" stroke-width="7" stroke-linecap="round" fill="none"/>
+          <!-- digging leg -->
+          <path d="M 236 330 q -6 10 -2 16" stroke="#f08ba4" stroke-width="7" stroke-linecap="round" fill="none"/>
+          <!-- wrinkles -->
+          <path d="M 238 290 q 6 4 12 0 M 230 300 q 8 4 16 0" stroke="#e57a97" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".7"/>
+        </g>
+
+        <!-- side buddy peeking -->
+        <g class="mr-buddy">
+          <circle cx="390" cy="330" r="16" fill="url(#mr-skin)"/>
+          <circle cx="396" cy="326" r="1.8" fill="#3a1a22"/>
+          <rect x="402" y="336" width="4" height="8" rx="1" fill="#ffffff"/>
+          <rect x="407" y="336" width="4" height="8" rx="1" fill="#ffffff"/>
+          <path d="M 398 322 q -12 -8 -20 -6" stroke="#e57a97" stroke-width="2" fill="none"/>
+        </g>
+
+        <!-- labels -->
+        <g class="mr-labels">
+          <text x="250" y="130" font-size="15" font-weight="800" fill="#2f7fc9">O&#8322;</text>
+          <text x="150" y="230" font-size="14" font-weight="800" fill="#ffd9a8">almost no O&#8322; down here!</text>
+        </g>
+      </svg>
+    </section>
+
+    <!-- ================= MEET THE MOLE-RAT ================= -->
+    <section class="section meet-section" id="meet">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128053; All aboard!</p>
+        <h2>Meet the Naked Mole-Rat</h2>
+        <p class="section-sub">It&rsquo;s not a mole and it&rsquo;s not a rat &mdash; it&rsquo;s its very own awesome kind of rodent!</p>
+      </div>
+
+      <div class="meet-grid">
+        <article class="meet-card" data-reveal>
+          <span class="meet-emoji">&#127758;</span>
+          <h3>Home: East Africa</h3>
+          <p>It digs long tunnel cities under the dry grasslands of <strong>Kenya, Ethiopia and Somalia</strong>. It barely
+          ever comes to the surface!</p>
+        </article>
+        <article class="meet-card" data-reveal>
+          <span class="meet-emoji">&#128207;</span>
+          <h3>Tiny but Tough</h3>
+          <p>Only about <strong>8&ndash;10 cm</strong> long &mdash; a bit bigger than a crayon &mdash; with <strong>pink, wrinkly,
+          nearly hairless skin</strong>. That skin earned it the funny name &ldquo;naked&rdquo;!</p>
+        </article>
+        <article class="meet-card" data-reveal>
+          <span class="meet-emoji">&#129463;&#65039;</span>
+          <h3>Super Teeth!</h3>
+          <p>Two big buck teeth dig tunnels, and a mole-rat can move them <strong>separately</strong> &mdash; like tiny
+          front shovels. Its lips close behind its teeth so it never swallows dirt!</p>
+        </article>
+        <article class="meet-card" data-reveal>
+          <span class="meet-emoji">&#128024;</span>
+          <h3>&ldquo;Queen&rdquo; Rules</h3>
+          <p>Like bees, a colony has <strong>one special queen, a king, and workers</strong>. The queen is the only one who
+          has babies &mdash; up to <strong>27 at a time</strong>!</p>
+        </article>
+      </div>
+      <p class="meet-note" data-reveal>Colonies can grow to about <strong>300 members</strong> &mdash; all digging, cuddling and even
+      sharing food like one big family. Cuteness level: debatable. Coolness level: off the charts! &#128525;</p>
+    </section>
+
+    <!--===MR-B===-->
+  </main>
+
+  <script src="molerat.js"></script>
+</body>
+</html>

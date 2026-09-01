@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dumbo Octopus: Deep-Sea Superhero — Anatomy for Curious Kids (Ages 8–9)</title>
+  <meta name="description" content="How does a dumbo octopus survive the crushing deep sea? Explore its anatomy: a squishy jelly body, flappy fin-ears, umbrella arms, fuzzy cirri and more, then take the mini quiz!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dumbo.css">
+</head>
+<body id="top">
+
+  <header class="topbar">
+    <a href="index.html#top" class="brand"><span class="brand-emoji">&#128025;</span>Dumbo <em>Deep Dive</em></a>
+    <nav class="topnav" aria-label="Page sections">
+      <a href="index.html">&#127968; Home</a>
+      <a href="#anatomy">&#129514; Look Inside</a>
+      <a href="#superpowers">&#11088; Superpowers</a>
+      <a href="#depth">&#128757; Where It Lives</a>
+      <a href="#quiz" class="nav-quiz">&#129504; Mini Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="dumbo-hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Sub-page &middot; Deep-sea anatomy</p>
+          <h1>Dumbo Octopus: <mark>The Deep-Sea Superhero</mark></h1>
+          <p class="hero-sub">
+            Dumbo floats <strong>1 to 7 kilometres</strong> under the sea, where the water pressure could
+            smash a glass jar &mdash; and even crush a metal ship! So <em>how does its soft body survive down
+            there?</em> Grab your imaginary submarine and let&rsquo;s look inside! &#128269;
+          </p>
+          <div class="hero-actions">
+            <a href="#anatomy" class="btn btn--warm">&#128269; Meet the Anatomy</a>
+            <a href="#quiz" class="btn btn--cool">&#129504; Jump to the Mini Quiz</a>
+          </div>
+          <p class="hero-badge">&#128240; Scientists spotted one in <strong>March 2025</strong>!</p>
+        </div>
+      </div>
+
+      <svg class="hero-dumbo-svg" viewBox="0 0 420 420" role="img" aria-label="Dumbo octopus floating in the deep sea with drifting marine snow and a tiny submarine">
+        <defs>
+          <linearGradient id="dh-sea" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#123a7a"/>
+            <stop offset=".55" stop-color="#0a1f4d"/>
+            <stop offset="1" stop-color="#030918"/>
+          </linearGradient>
+          <radialGradient id="dh-body" cx=".5" cy=".35" r=".75">
+            <stop offset="0" stop-color="#e09dff"/>
+            <stop offset="1" stop-color="#8d4fd6"/>
+          </radialGradient>
+          <radialGradient id="dh-glow" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#d48aff" stop-opacity=".35"/>
+            <stop offset="1" stop-color="#d48aff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="420" height="420" fill="url(#dh-sea)"/>
+        <polygon points="150,0 120,420 330,420 300,0" fill="#ffffff" opacity=".05"/>
+        <ellipse cx="210" cy="210" rx="185" ry="185" fill="url(#dh-glow)"/>
+
+        <circle class="snow snow--1" cx="80" cy="50" r="2.6" fill="#bfe0ff" opacity=".9"/>
+        <circle class="snow snow--2" cx="360" cy="80" r="2" fill="#bfe0ff" opacity=".7"/>
+        <circle class="snow snow--3" cx="40" cy="150" r="1.8" fill="#d9f0ff" opacity=".8"/>
+        <circle class="snow snow--4" cx="390" cy="200" r="2.4" fill="#bfe0ff" opacity=".7"/>
+        <circle class="snow snow--5" cx="70" cy="280" r="2" fill="#d9f0ff" opacity=".8"/>
+        <circle class="snow snow--6" cx="350" cy="330" r="2.8" fill="#bfe0ff" opacity=".9"/>
+        <circle class="snow snow--7" cx="120" cy="360" r="1.6" fill="#d9f0ff" opacity=".7"/>
+        <circle class="snow snow--8" cx="300" cy="40" r="1.8" fill="#bfe0ff" opacity=".8"/>
+
+        <g class="dumbo-ear dumbo-ear--left">
+          <ellipse cx="118" cy="150" rx="64" ry="34" fill="#9f5cd6" transform="rotate(-14 118 150)"/>
+          <ellipse cx="126" cy="152" rx="40" ry="19" fill="#c78bff" opacity=".65" transform="rotate(-14 126 152)"/>
+        </g>
+        <g class="dumbo-ear">
+          <ellipse cx="302" cy="150" rx="64" ry="34" fill="#9f5cd6" transform="rotate(14 302 150)"/>
+          <ellipse cx="294" cy="152" rx="40" ry="19" fill="#c78bff" opacity=".65" transform="rotate(14 294 152)"/>
+        </g>
+
+        <ellipse cx="210" cy="240" rx="105" ry="118" fill="url(#dh-body)"/>
+        <ellipse cx="210" cy="272" rx="66" ry="44" fill="#c78bff" opacity=".35"/>
+
+        <circle class="dumbo-eye" cx="170" cy="218" r="17" fill="#ffffff"/>
+        <circle cx="170" cy="218" r="8" fill="#2a1a4a"/>
+        <circle cx="173" cy="215" r="3" fill="#ffffff"/>
+        <circle class="dumbo-eye" cx="250" cy="218" r="17" fill="#ffffff"/>
+        <circle cx="250" cy="218" r="8" fill="#2a1a4a"/>
+        <circle cx="253" cy="215" r="3" fill="#ffffff"/>
+
+        <path d="M 198 252 Q 210 266 226 250" stroke="#5a2d91" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+        <path d="M 140 340 C 120 366 118 392 132 412" stroke="url(#dh-body)" stroke-width="15" stroke-linecap="round" fill="none"/>
+        <path d="M 176 352 C 166 376 168 398 180 414" stroke="url(#dh-body)" stroke-width="14" stroke-linecap="round" fill="none"/>
+        <path d="M 244 352 C 254 376 252 398 240 414" stroke="url(#dh-body)" stroke-width="14" stroke-linecap="round" fill="none"/>
+        <path d="M 280 340 C 300 366 302 392 288 412" stroke="url(#dh-body)" stroke-width="15" stroke-linecap="round" fill="none"/>
+        <path d="M 128 330 C 110 300 108 260 132 238" stroke="#b069e8" stroke-width="13" stroke-linecap="round" fill="none"/>
+        <path d="M 292 330 C 310 300 312 260 288 238" stroke="#b069e8" stroke-width="13" stroke-linecap="round" fill="none"/>
+
+        <path d="M 222 298 l 28 -6 l -6 12 Z" fill="#8d4fd6"/>
+
+        <g class="mini-sub">
+          <ellipse cx="60" cy="140" rx="26" ry="12" fill="#3a5170"/>
+          <ellipse cx="60" cy="138" rx="18" ry="8" fill="#9cc8f2" opacity=".9"/>
+          <circle cx="48" cy="138" r="5" fill="#13273f"/>
+          <rect x="34" y="136" width="10" height="4" fill="#8ba3bd"/>
+          <rect x="70" y="136" width="8" height="4" fill="#8ba3bd"/>
+          <polygon points="52,146 66,146 58,158" fill="#6b8fb5"/>
+        </g>
+      </svg>
+
+      <div class="wave-divider" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================= THE BIG SQUEEZE ================= -->
+    <section class="section squeeze-section">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#129504; The big question</p>
+        <h2>The Deep Sea Tries to SQUISH Everything</h2>
+        <p class="section-sub">Would you believe a soft jelly creature is the one laughing at the pressure?</p>
+      </div>
+
+      <div class="squeeze-grid" data-reveal>
+        <div class="squeeze-card squeeze-card--bad">
+          <span class="squeeze-emoji">&#128755;</span>
+          <h3>Penguin plop! &#128049;</h3>
+          <p>People and most sea animals carry <strong>air pockets inside</strong> &mdash; in lungs, helmets or shells.
+          Deep down, the heavy water squashes those air pockets like a giant fist. That&rsquo;s why
+          submarines need <strong>super-thick metal walls</strong>!</p>
+        </div>
+        <div class="squeeze-card squeeze-card--good">
+          <span class="squeeze-emoji">&#128025;</span>
+          <h3>But Dumbo is a water balloon! &#127753;</h3>
+          <p>Dumbo&rsquo;s body is <strong>soft, squishy and full of water</strong> &mdash; no air pockets, no hard shell.
+          Try squeezing a water balloon: the water slips away and nothing breaks. Pressure just washes
+          right through Dumbo&rsquo;s jelly body &mdash; so the deep sea can&rsquo;t crush it!</p>
+        </div>
+      </div>
+      <p class="squeeze-note" data-reveal>Down at <strong>7,000&nbsp;m</strong> the squeeze is about <strong>700 times</strong> stronger than at the surface &mdash; like standing under lots of cars on every fingertip!</p>
+    </section>
+
+    <!-- ================= LOOK INSIDE ================= -->
+    <section class="section anatomy-section" id="anatomy">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128269; Look inside</p>
+        <h2>Dumbo&rsquo;s Deep-Sea Anatomy</h2>
+        <p class="section-sub">Tap the numbered dots on the picture (or the cards) to learn what each body part does!</p>
+      </div>
+
+      <div class="anatomy-wrap" data-reveal>
+        <figure class="anatomy-figure">
+          <svg viewBox="0 0 420 440" role="img" aria-label="Diagram of a dumbo octopus with numbered body parts">
+            <defs>
+              <linearGradient id="di-sea" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#13376f"/>
+                <stop offset="1" stop-color="#051226"/>
+              </linearGradient>
+              <radialGradient id="di-body" cx=".5" cy=".35" r=".75">
+                <stop offset="0" stop-color="#e09dff"/>
+                <stop offset="1" stop-color="#8d4fd6"/>
+              </radialGradient>
+            </defs>
+            <rect width="420" height="440" fill="url(#di-sea)"/>
+
+            <circle class="snow snow--2" cx="70" cy="60" r="2.4" fill="#bfe0ff" opacity=".8"/>
+            <circle class="snow snow--4" cx="350" cy="120" r="2" fill="#bfe0ff" opacity=".7"/>
+            <circle class="snow snow--3" cx="50" cy="320" r="2.6" fill="#d9f0ff" opacity=".8"/>
+            <circle class="snow snow--7" cx="380" cy="360" r="2.2" fill="#bfe0ff" opacity=".7"/>
+
+            <!-- fins -->
+            <g class="dumbo-ear dumbo-ear--left">
+              <ellipse cx="118" cy="150" rx="64" ry="32" fill="#9f5cd6" transform="rotate(-14 118 150)"/>
+              <ellipse cx="126" cy="152" rx="40" ry="18" fill="#c78bff" opacity=".65" transform="rotate(-14 126 152)"/>
+            </g>
+            <g class="dumbo-ear">
+              <ellipse cx="302" cy="150" rx="64" ry="32" fill="#9f5cd6" transform="rotate(14 302 150)"/>
+              <ellipse cx="294" cy="152" rx="40" ry="18" fill="#c78bff" opacity=".65" transform="rotate(14 294 152)"/>
+            </g>
+
+            <!-- mantle/body -->
+            <ellipse cx="210" cy="245" rx="100" ry="112" fill="url(#di-body)"/>
+
+            <!-- eyes -->
+            <circle class="dumbo-eye" cx="168" cy="222" r="17" fill="#ffffff"/>
+            <circle cx="168" cy="222" r="8" fill="#2a1a4a"/>
+            <circle cx="171" cy="219" r="3" fill="#ffffff"/>
+            <circle class="dumbo-eye" cx="252" cy="222" r="17" fill="#ffffff"/>
+            <circle cx="252" cy="222" r="8" fill="#2a1a4a"/>
+            <circle cx="255" cy="219" r="3" fill="#ffffff"/>
+            <path d="M 198 258 Q 210 272 226 256" stroke="#5a2d91" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+            <!-- arms with web + cirri + suckers -->
+            <path d="M 128 335 C 108 364 104 396 122 420" stroke="#a860d6" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M 172 348 C 158 376 160 400 174 420" stroke="#a860d6" stroke-width="13" stroke-linecap="round" fill="none"/>
+            <path d="M 248 348 C 262 376 260 400 246 420" stroke="#a860d6" stroke-width="13" stroke-linecap="round" fill="none"/>
+            <path d="M 292 335 C 312 364 316 396 298 420" stroke="#a860d6" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M 140 300 C 122 276 122 250 146 234" stroke="#b069e8" stroke-width="12" stroke-linecap="round" fill="none"/>
+            <path d="M 280 300 C 298 276 298 250 274 234" stroke="#b069e8" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+            <!-- cirri (little fringes) -->
+            <path d="M 146 356 l 12 -6 M 154 370 l -12 -6 M 179 372 l 10 -8 M 241 372 l -10 -8 M 266 370 l 12 -6 M 274 356 l -12 -6" stroke="#ff9ade" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+            <!-- suckers -->
+            <circle cx="128" cy="352" r="2.6" fill="#613c8d"/>
+            <circle cx="118" cy="378" r="2.6" fill="#613c8d"/>
+            <circle cx="292" cy="352" r="2.6" fill="#613c8d"/>
+            <circle cx="302" cy="378" r="2.6" fill="#613c8d"/>
+            <circle cx="176" cy="368" r="2.4" fill="#613c8d"/>
+            <circle cx="244" cy="368" r="2.4" fill="#613c8d"/>
+
+            <!-- funnel -->
+            <path d="M 224 300 l 30 -8 l -8 14 Z" fill="#8d4fd6"/>
+
+            <!-- numbered dots -->
+            <g class="anat-dot" data-anatomy="1" tabindex="0" role="button" aria-label="Fins">
+              <circle cx="92" cy="128" r="15" fill="#ffd93b" stroke="#ffffff" stroke-width="4"/>
+              <text x="92" y="134" text-anchor="middle" font-size="16" font-weight="800" fill="#1f3a5f">1</text>
+            </g>
+            <g class="anat-dot" data-anatomy="2" tabindex="0" role="button" aria-label="Eyes">
+              <circle cx="288" cy="205" r="15" fill="#ffd93b" stroke="#ffffff" stroke-width="4"/>
+              <text x="288" y="211" text-anchor="middle" font-size="16" font-weight="800" fill="#1f3a5f">2</text>
+            </g>
+            <g class="anat-dot" data-anatomy="3" tabindex="0" role="button" aria-label="Mantle body">
+              <circle cx="196" cy="128" r="15" fill="#ffd93b" stroke="#ffffff" stroke-width="4"/>
+              <text x="196" y="134" text-anchor="middle" font-size="16" font-weight="800" fill="#1f3a5f">3</text>
+            </g>
+            <g class="anat-dot" data-anatomy="4" tabindex="0" role="button" aria-label="Arms and web">
+              <circle cx="208" cy="404" r="15" fill="#ffd93b" stroke="#ffffff" stroke-width="4"/>
+              <text x="208" y="410" text-anchor="middle" font-size="16" font-weight="800" fill="#1f3a5f">4</text>
+            </g>
+            <g class="anat-dot" data-anatomy="5" tabindex="0" role="button" aria-label="Cirri and suckers">
+              <circle cx="310" cy="330" r="15" fill="#ffd93b" stroke="#ffffff" stroke-width="4"/>
+              <text x="310" y="336" text-anchor="middle" font-size="16" font-weight="800" fill="#1f3a5f">5</text>
+            </g>
+            <g class="anat-dot" data-anatomy="6" tabindex="0" role="button" aria-label="Funnel">
+              <circle cx="268" cy="296" r="15" fill="#ffd93b" stroke="#ffffff" stroke-width="4"/>
+              <text x="268" y="302" text-anchor="middle" font-size="16" font-weight="800" fill="#1f3a5f">6</text>
+            </g>
+          </svg>
+          <figcaption>&#128075; Tap a numbered dot!</figcaption>
+        </figure>
+
+        <div class="anatomy-cards">
+          <article class="anatomy-card" data-anatomy="1">
+              <h3><span class="num-badge">1</span> Finny Ears <span class="anat-emoji">&#128066;</span></h3>
+              <p>Most octopuses zoom by squirting jets of water. Dumbo is different: it flaps these two fins like
+              soft little wings to <strong>swim, glide and hover</strong>.</p>
+              <p class="mini-power">&#9889; <strong>Energy-saver motor:</strong> flapping uses much less energy than jetting &mdash; super handy in a place where food is rare!</p>
+            </article>
+            <article class="anatomy-card" data-anatomy="2">
+              <h3><span class="num-badge">2</span> Night-Vision Eyes <span class="anat-emoji">&#128065;</span></h3>
+              <p>Dumbo&rsquo;s home is <strong>almost pitch-dark</strong>. Its big, round eyes are amazing light-collectors,
+              like the best night-camera in the world, so it can spot tiny snacks and stay out of trouble.</p>
+              <p class="mini-power">&#9889; <strong>Sees in the blue-black dark:</strong> big eyes scoop up every tiny bit of dim light!</p>
+            </article>
+            <article class="anatomy-card" data-anatomy="3">
+              <h3><span class="num-badge">3</span> Squishy Jelly Mantle <span class="anat-emoji">&#127880;</span></h3>
+              <p>The main body (called the <em>mantle</em>) is <strong>soft, jelly-like and full of water</strong> &mdash; a bit like
+              a water balloon! No air pockets and no hard shell, so the crushing pressure just washes through.</p>
+              <p class="mini-power">&#9889; <strong>Pressure-proof squish:</strong> the water inside pushes back evenly, so nothing gets crushed!</p>
+            </article>
+            <article class="anatomy-card" data-anatomy="4">
+              <h3><span class="num-badge">4</span> Umbrella Arms &amp; Web <span class="anat-emoji">&#9730;</span></h3>
+              <p>Dumbo&rsquo;s eight arms are joined by stretchy skin, like the fabric of an umbrella. It opens this
+              &ldquo;bell&rdquo; to <strong>float slowly, turn gently and scoop up dinner</strong>.</p>
+              <p class="mini-power">&#9889; <strong>A built-in sail:</strong> the web catches water like a parachute, helping Dumbo glide without extra work!</p>
+            </article>
+            <article class="anatomy-card" data-anatomy="5">
+              <h3><span class="num-badge">5</span> Fuzzy Cirri &amp; Suckers <span class="anat-emoji">&#129530;</span></h3>
+              <p>Along each arm are little finger-like fuzzies called <em>cirri</em> (say &ldquo;seer-ee&rdquo;) plus rows of tiny
+              suckers. Cirri <strong>sweep tiny animals out of the soft mud</strong>, and the suckers hold on tight.</p>
+              <p class="mini-power">&#9889; <strong>Vacuum + grabber:</strong> built-in tools for finding worms, tiny shrimp and snails in the dark!</p>
+            </article>
+            <article class="anatomy-card" data-anatomy="6">
+              <h3><span class="num-badge">6</span> Tiny Funnel &mdash; Gentle Jet <span class="anat-emoji">&#128168;</span></h3>
+              <p>Near its arms is a little tube called a <em>funnel</em>. Dumbo can give a slow puff of water for a
+              small boost &mdash; like riding a scooter, not a rocket!</p>
+              <p class="mini-power">&#9889; <strong>Slow and steady wins:</strong> tiny jets plus flappy fins mean almost all energy is saved for growing and exploring!</p>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUPER POWERS ================= -->
+    <section class="section power-section" id="superpowers">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#11088; Bonus round</p>
+        <h2>Dumbo&rsquo;s Deep-Sea Superpowers</h2>
+        <p class="section-sub">Four more body tricks that make Dumbo a deep-sea champion!</p>
+      </div>
+
+      <div class="power-grid">
+        <article class="power-card" data-reveal>
+          <span class="power-emoji">&#128683;</span>
+          <h3>No Ink Tank</h3>
+          <p>Most octopuses squirt an ink cloud to escape. Finned octopuses like Dumbo <strong>skip the ink</strong> &mdash;
+          in the pitch-dark, a smoke cloud wouldn&rsquo;t scare anyone, and making ink would waste precious energy!</p>
+        </article>
+        <article class="power-card" data-reveal>
+          <span class="power-emoji">&#128034;</span>
+          <h3>Slow &amp; Steady</h3>
+          <p>Dumbo has a <strong>very low metabolism</strong>, which means its body uses only a little fuel each day.
+          Perfect for a place where meals can be few and far between!</p>
+        </article>
+        <article class="power-card" data-reveal>
+          <span class="power-emoji">&#128207;</span>
+          <h3>Small &amp; Light</h3>
+          <p>Dumbo stays nicely small &mdash; about <strong>20&ndash;30&nbsp;cm</strong>, like a school ruler. A tiny body needs
+          less food and can squeeze into snug, safe hiding spots.</p>
+        </article>
+        <article class="power-card" data-reveal>
+          <span class="power-emoji">&#10052;&#65039;</span>
+          <h3>Cold-Proof Jelly</h3>
+          <p>Its jelly body works perfectly in <strong>near-freezing water</strong>. Dumbo is 100% built for the cold, dark
+          abyss &mdash; and some visit warm spots near deep-sea vents!</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= WHERE IT LIVES ================= -->
+    <section class="section depth-section" id="depth">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128757; Diving down, down, down</p>
+        <h2>How Deep Is Dumbo&rsquo;s Home?</h2>
+        <p class="section-sub">Watch the depth ladder &mdash; Dumbo lives way down where it&rsquo;s midnight all day!</p>
+      </div>
+
+      <div class="depth-ladder" data-reveal>
+        <div class="depth-track">
+          <div class="depth-step" style="height: 12%"><span class="depth-label">0&ndash;200&nbsp;m</span><span class="depth-note">Sunny blue! &#128756;</span></div>
+          <div class="depth-step" style="height: 11%"><span class="depth-label">200&ndash;1,000&nbsp;m</span><span class="depth-note">Twilight dive &#128565;</span></div>
+          <div class="depth-step depth-step--home" style="height: 38%"><span class="depth-label">1,000&ndash;4,000&nbsp;m</span><span class="depth-note">&#128025; Dumbo&rsquo;s favourite zone!</span></div>
+          <div class="depth-step depth-step--deep" style="height: 39%"><span class="depth-label">4,000&ndash;7,000&nbsp;m</span><span class="depth-note">&#127881; Super-deep record waters!</span></div>
+          <span class="depth-octo" aria-hidden="true">&#128025;</span>
+        </div>
+        <p class="depth-fact">A dumbo octopus has been seen as deep as <strong>7,279&nbsp;m</strong> &mdash; that&rsquo;s taller than seven stacked CN Towers! Most octopuses never leave the light.</p>
+      </div>
+    </section>
+
+    <!-- ================= MINI QUIZ ================= -->
+    <section class="section quiz-section" id="quiz" data-reveal>
+      <div class="section-head">
+        <p class="eyebrow">Are you ready, explorer?</p>
+        <h2>&#129504; The Dumbo Mini Quiz</h2>
+        <p class="section-sub">5 questions about Dumbo&rsquo;s deep-sea anatomy. Pick an answer &mdash; you always learn something new!</p>
+      </div>
+      <div class="quiz-shell" id="quizBox" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p>Dumbo <em>Deep Dive</em> &middot; part of <a href="index.html"><strong>Animal Discovery HQ</strong></a> &#128153;</p>
+    <p class="foot-note">Made for curious kids aged 8&ndash;9. Facts checked against 2024&ndash;2025 science news. Keep asking questions!</p>
+  </footer>
+
+  <script src="dumbo.js"></script>
+</body>
+</html>

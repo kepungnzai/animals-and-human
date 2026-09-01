@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Axolotl: The Animal That Grows Itself Back — Regeneration for Curious Kids (Ages 8–9)</title>
+  <meta name="description" content="Why can an axolotl regrow its legs, tail, gills and even parts of its heart and brain? Discover the blastema, no-scar healing and the honest limits — then take the mini quiz!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="axolotl.css">
+</head>
+<body id="top">
+
+  <header class="topbar">
+    <a href="index.html#top" class="brand"><span class="brand-emoji">&#129422;</span>Axolotl <em>Regrow Lab</em></a>
+    <nav class="topnav" aria-label="Page sections">
+      <a href="index.html">&#127968; Home</a>
+      <a href="#can-grow">&#128170; What It Can Grow</a>
+      <a href="#recipe">&#129516; The Secret Recipe</a>
+      <a href="#limits">&#128683; The Real Limits</a>
+      <a href="#science">&#129514; Science Lab</a>
+      <a href="#quiz" class="nav-quiz">&#129504; Mini Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="axo-hero" id="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Sub-page &middot; Animal super-powers</p>
+        <h1>Axolotl: <mark>The Animal That Grows Itself Back</mark></h1>
+        <p class="hero-sub">
+          A sneaky predator nibbles off an axolotl&rsquo;s leg&hellip; and the axolotl just
+          <strong>grows a brand-new one</strong>! 🦎 But it can&rsquo;t regrow <em>everything</em>.
+          Let&rsquo;s dive into how the magic works &mdash; and exactly where its super-power hits
+          a wall!
+        </p>
+        <div class="hero-actions">
+          <a href="#can-grow" class="btn btn--warm">&#128170; What CAN It Grow?</a>
+          <a href="#limits" class="btn btn--cool">&#128683; What CAN'T It Grow?</a>
+        </div>
+        <p class="hero-badge">&#128240; Scientists decoded its giant genome in <strong>2022</strong>!</p>
+      </div>
+
+      <svg class="hero-axo-svg" viewBox="0 0 520 380" role="img" aria-label="A pink axolotl in a pond regrowing a leg in three stages">
+        <defs>
+          <linearGradient id="ax-pond" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#bfeeff"/>
+            <stop offset=".65" stop-color="#8fe3ff"/>
+            <stop offset="1" stop-color="#6fd0f5"/>
+          </linearGradient>
+          <radialGradient id="ax-body" cx=".5" cy=".4" r=".7">
+            <stop offset="0" stop-color="#ffd0e0"/>
+            <stop offset="1" stop-color="#ff9dbe"/>
+          </radialGradient>
+        </defs>
+        <rect width="520" height="380" fill="url(#ax-pond)"/>
+        <ellipse cx="260" cy="372" rx="250" ry="14" fill="#3aa8d8" opacity=".35"/>
+
+        <!-- pond plants -->
+        <path d="M 40 360 Q 70 300 58 246 M 66 360 Q 92 310 84 262" stroke="#35c58b" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <ellipse cx="118" cy="330" rx="24" ry="10" fill="#5edb9a" transform="rotate(-14 118 330)"/>
+        <path d="M 468 356 Q 448 296 458 244" stroke="#35c58b" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <ellipse cx="452" cy="322" rx="22" ry="9" fill="#5edb9a" transform="rotate(12 452 322)"/>
+
+        <!-- bubbles -->
+        <ellipse class="bubble bubble--1" cx="90" cy="170" r="8" fill="#ffffff" opacity=".75"/>
+        <ellipse class="bubble bubble--2" cx="120" cy="120" r="5" fill="#ffffff" opacity=".6"/>
+        <ellipse class="bubble bubble--3" cx="430" cy="140" r="7" fill="#ffffff" opacity=".7"/>
+        <ellipse class="bubble bubble--4" cx="455" cy="90" r="4" fill="#ffffff" opacity=".55"/>
+
+        <!-- gills -->
+        <g class="gill">
+          <path d="M 176 152 L 138 116" stroke="#ff87ad" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="138" cy="116" r="12" fill="#ff87ad"/>
+          <path d="M 176 156 L 122 152" stroke="#ff87ad" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="122" cy="152" r="12" fill="#ff87ad"/>
+          <path d="M 176 160 L 142 190" stroke="#ff87ad" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="142" cy="190" r="12" fill="#ff87ad"/>
+        </g>
+        <g class="gill">
+          <path d="M 304 152 L 342 116" stroke="#ff87ad" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="342" cy="116" r="12" fill="#ff87ad"/>
+          <path d="M 304 156 L 358 152" stroke="#ff87ad" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="358" cy="152" r="12" fill="#ff87ad"/>
+          <path d="M 304 160 L 338 190" stroke="#ff87ad" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="338" cy="190" r="12" fill="#ff87ad"/>
+        </g>
+
+        <!-- tail -->
+        <path class="axo-tail" d="M 138 236 C 90 268 54 260 30 282 C 58 300 96 296 140 268 Z" fill="url(#ax-body)"/>
+
+        <!-- body -->
+        <ellipse cx="240" cy="226" rx="108" ry="60" fill="url(#ax-body)"/>
+        <ellipse cx="240" cy="238" rx="76" ry="34" fill="#ffe3ee" opacity=".85"/>
+
+        <!-- back legs -->
+        <ellipse cx="198" cy="274" rx="15" ry="9" fill="#ff8fb0" transform="rotate(-12 198 274)"/>
+        <ellipse cx="282" cy="274" rx="15" ry="9" fill="#ff8fb0" transform="rotate(12 282 274)"/>
+
+        <!-- FRONT LEG / regrowth zone -->
+        <ellipse class="axo-frontleg" cx="196" cy="252" rx="15" ry="8" fill="#ff8fb0" transform="rotate(4 196 252)"/>
+
+        <!-- 3 growth stages -->
+        <g class="grow-stage grow-stage--1">
+          <circle cx="214" cy="272" r="9" fill="#ff87ad"/>
+          <circle cx="214" cy="272" r="13" fill="none" stroke="#ff87ad" stroke-width="2.5" opacity=".55" stroke-dasharray="4 5"/>
+        </g>
+        <g class="grow-stage grow-stage--2">
+          <path d="M 216 272 C 222 276 224 286 220 294" stroke="#ff87ad" stroke-width="9" stroke-linecap="round" fill="none"/>
+          <ellipse cx="220" cy="296" rx="7" ry="5" fill="#ff8fb0"/>
+        </g>
+        <g class="grow-stage grow-stage--3">
+          <path d="M 214 272 C 222 286 230 294 226 302" stroke="#ff8fb0" stroke-width="9" stroke-linecap="round" fill="none"/>
+          <ellipse cx="226" cy="304" rx="8" ry="5" fill="#ff8fb0"/>
+        </g>
+
+        <!-- eyes -->
+        <circle cx="182" cy="206" r="9" fill="#3b2140"/>
+        <circle cx="186" cy="203" r="3" fill="#ffffff"/>
+        <circle cx="298" cy="206" r="9" fill="#3b2140"/>
+        <circle cx="302" cy="203" r="3" fill="#ffffff"/>
+        <path d="M 236 224 Q 250 240 268 226" stroke="#8a3a55" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+        <!-- sparkles -->
+        <text class="sparkle sparkle--1" x="90" y="90" font-size="20">&#10024;</text>
+        <text class="sparkle sparkle--2" x="420" y="80" font-size="16">&#10024;</text>
+        <text class="sparkle sparkle--3" x="370" y="240" font-size="14">&#10024;</text>
+
+        <!-- grow arrow -->
+        <g class="grow-arrow" transform="translate(108 0)">
+          <path d="M 120 60 l 26 0 l -10 -8 M 145 52 l 10 8 l -10 8" stroke="#ff8b3e" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="96" y="44" font-size="17" font-weight="800" fill="#ff8b3e">GROW!</text>
+        </g>
+      </svg>
+    </section>
+
+    <!-- ================= THE BIG REASON ================= -->
+    <section class="section reason-section">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#129504; The big question</p>
+        <h2>Why Would an Animal Need to Regrow Stuff?</h2>
+        <p class="section-sub">Because the pond can be a snacky place! &#128025;</p>
+      </div>
+
+      <div class="reason-grid" data-reveal>
+        <div class="reason-card">
+          <span class="reason-emoji">&#128037;</span>
+          <h3>A hungry heron!</h3>
+          <p>A wading bird lunges at an axolotl&rsquo;s tail. <strong>Snap!</strong> The tail rips off &mdash; but the axolotl
+          escapes. Losing a tail is like dropping your backpack to run faster: it buys your freedom!</p>
+        </div>
+        <div class="reason-card reason-card--pink">
+          <span class="reason-emoji">&#129422;</span>
+          <h3>No problem at all!</h3>
+          <p>Over the next few <strong>weeks or months</strong>, a fresh tail (or leg, or even a bit of jaw!)
+          quietly grows back &mdash; perfectly shaped, with <strong>no bumpy scar</strong>. It&rsquo;s like a video-game
+          player that slowly rebuilds its own health bar!</p>
+        </div>
+      </div>
+      <p class="reason-note" data-reveal>This trick is called <strong>&ldquo;regeneration&rdquo;</strong> &mdash; making a brand-new body part from the old wound. And the axolotl is the <strong>world champion</strong> at it!</p>
+    </section>
+
+    <!-- ================= WHAT IT CAN REGROW ================= -->
+    <section class="section grow-section" id="can-grow">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128170; The green list</p>
+        <h2>What CAN an Axolotl Regrow?</h2>
+        <p class="section-sub">Tap a card to flip it, like a superhero trading card!</p>
+      </div>
+
+      <div class="grow-grid">
+        <article class="grow-card" data-reveal>
+          <span class="grow-emoji">&#129715;</span>
+          <h3>Legs &amp; Feet</h3>
+          <p>Whole arms and legs grow back <strong>with bones, muscles and nerves</strong> &mdash; it can even do this
+          again and again!</p>
+        </article>
+        <article class="grow-card" data-reveal>
+          <span class="grow-emoji">&#128025;</span>
+          <h3>Tail</h3>
+          <p>The whole tail returns &mdash; <strong>including the backbone and spinal cord</strong> hiding inside!</p>
+        </article>
+        <article class="grow-card" data-reveal>
+          <span class="grow-emoji">&#128171;</span>
+          <h3>Gills</h3>
+          <p>Its feathery pink crown of gills can be regrown too &mdash; handy, since it breathes through them!</p>
+        </article>
+        <article class="grow-card" data-reveal>
+          <span class="grow-emoji">&#128067;</span>
+          <h3>Lower Jaw</h3>
+          <p>A nibbled lower jaw rebuilds itself so the axolotl can keep gulping its favourite snacks.</p>
+        </article>
+        <article class="grow-card" data-reveal>
+          <span class="grow-emoji">&#129528;</span>
+          <h3>Skin (no scars!)</h3>
+          <p>Its skin heals <strong>without a scar</strong>. Scar tissue is like a quick glue patch &mdash; the axolotl
+          chooses real regrowth instead.</p>
+        </article>
+        <article class="grow-card" data-reveal>
+          <span class="grow-emoji">&#128155;</span>
+          <h3>Parts of its Heart</h3>
+          <p>Even a slice of heart muscle can repair itself &mdash; imagine a pump fixing its own piping!</p>
+        </article>
+        <article class="grow-card" data-reveal>
+          <span class="grow-emoji">&#129504;</span>
+          <h3>Parts of its Brain</h3>
+          <p>Sections of its <strong>brain</strong> can be rebuilt after injury &mdash; no other backboned animal comes close!</p>
+        </article>
+        <article class="grow-card" data-reveal>
+          <span class="grow-emoji">&#128065;</span>
+          <h3>Eye Tissues</h3>
+          <p>Damaged tissues of the <strong>eye</strong> can be restored &mdash; even the lens can grow again!</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= THE SECRET RECIPE ================= -->
+    <section class="section recipe-section" id="recipe">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#129516; Time to get curious</p>
+        <h2>The Secret Recipe: HOW Does the Magic Work?</h2>
+        <p class="section-sub">Five steps &mdash; it&rsquo;s not wizardry, it&rsquo;s amazing real biology!</p>
+      </div>
+
+      <ol class="recipe-list">
+        <li data-reveal>
+          <span class="step-num">1</span>
+          <div class="step-body">
+            <h3>The Super-Fast Bandage <span class="step-emoji">&#129717;</span></h3>
+            <p>The wound gets covered by a thin layer of skin <strong>super quickly</strong>. This &ldquo;launch pad&rdquo;
+            skin is the first ingredient &mdash; without it, regrowth can&rsquo;t start.</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <span class="step-num">2</span>
+          <div class="step-body">
+            <h3>The Wound Sends a Message <span class="step-emoji">&#128230;</span></h3>
+            <p>Nerves in the wounded area send signals that act like a loud alarm: <strong>&ldquo;BUILD A NEW PART HERE!&rdquo;</strong>
+            No signal means no growing.</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <span class="step-num">3</span>
+          <div class="step-body">
+            <h3>The Reset Button &mdash; <em>Blastema</em> <span class="step-emoji">&#9193;</span></h3>
+            <p>Near the wound, grown-up cells (muscle, bone, skin) hit a <strong>time-travel button</strong>: they turn back
+            into simple &ldquo;builder&rdquo; cells. This lump of builders is called a <strong>blastema</strong> (blass-TEE-ma).</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <span class="step-num">4</span>
+          <div class="step-body">
+            <h3>The Builders Read the Blueprint <span class="step-emoji">&#128209;</span></h3>
+            <p>Every limb cell remembers its address &mdash; top or bottom, front or back, left or right along the limb.
+            The blastema reads those addresses and rebuilds <strong>the exact same shape</strong>: toes at the end, joints where they belong!</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <span class="step-num">5</span>
+          <div class="step-body">
+            <h3>The Quiet Helpers: Macrophages <span class="step-emoji">&#129440;&#65039;</span></h3>
+            <p>Special immune cells called <em>macrophages</em> patrol the wound and keep the
+            <strong>&ldquo;fire alarm&rdquo; (inflammation) quiet</strong>. In most animals that alarm would turn into a scar &mdash;
+            the axolotl hushes it so real regrowth can happen.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="recipe-extra" data-reveal>
+        <span class="recipe-extra-emoji">&#128218;</span>
+        <p>The axolotl also carries a <strong>giant instruction book</strong>: its DNA is roughly <strong>10 times bigger</strong> than a
+        human&rsquo;s! Scientists think that enormous recipe book may be one secret behind its regrowth super-power.</p>
+      </div>
+    </section>
+
+    <!-- ================= THE REAL LIMITS ================= -->
+    <section class="section limits-section" id="limits">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128683; The honest truth</p>
+        <h2>Wait &mdash; Are There ANY Limits?</h2>
+        <p class="section-sub">Yep! The axolotl is amazing, but it is <strong>not</strong> all-powerful. Here&rsquo;s where the
+        super-power runs out of battery.</p>
+      </div>
+
+      <div class="limits-grid">
+        <article class="limit-card" data-reveal>
+          <span class="limit-emoji">&#128128;</span>
+          <h3>No Whole Head / Whole Brain</h3>
+          <p>It can heal <em>parts</em> of its brain, but it <strong>cannot regrow a brand-new head</strong>. If the entire
+          brain is destroyed, that&rsquo;s the end of the story &mdash; even champions have their limits!</p>
+        </article>
+        <article class="limit-card" data-reveal>
+          <span class="limit-emoji">&#9200;</span>
+          <h3>Not Instant Magic</h3>
+          <p>Regrowth takes <strong>weeks or months</strong> &mdash; it&rsquo;s a slow rebuild, not a zap-and-snap. During that
+          time the axolotl is a bit slower and more careful.</p>
+        </article>
+        <article class="limit-card" data-reveal>
+          <span class="limit-emoji">&#128197;</span>
+          <h3>Age Matters</h3>
+          <p>Little axolotls regrow <strong>fast</strong>. Older ones still do it but <strong>more slowly</strong> &mdash; the magic
+          dims a little as they age, even though it never fully disappears.</p>
+        </article>
+        <article class="limit-card" data-reveal>
+          <span class="limit-emoji">&#127966;&#65039;</span>
+          <h3>It Needs the Right Helpers</h3>
+          <p>Regrowth needs <strong>skin to cover the wound</strong>, <strong>nerves to send signals</strong>, and cells that remember
+          their directions. If a wound is too big or messy, even the axolotl can&rsquo;t pull it off.</p>
+        </article>
+      </div>
+
+      <div class="limit-callout" data-reveal>
+        <p><strong>Here&rsquo;s a tricky one:</strong> if an axolotl is forced to leave the water and change into a
+        land salamander (scientists call that <em>metamorphosis</em>), its regeneration super-power
+        <strong>fades a lot</strong>. Staying a &ldquo;baby&rdquo; forever in the pond seems to keep the magic alive!</p>
+      </div>
+    </section>
+
+    <!-- ================= WHY SCIENTISTS CARE ================= -->
+    <section class="section science-section" id="science">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#129514; The science lab</p>
+        <h2>Why Scientists LOVE the Axolotl</h2>
+        <p class="section-sub">If we crack the axolotl&rsquo;s code, we might help people heal too!</p>
+      </div>
+
+      <div class="science-grid" data-reveal>
+        <div class="science-card">
+          <span class="science-emoji">&#129525;</span>
+          <h3>2022: The Gigantic Genome</h3>
+          <p>In <strong>2022</strong>, scientists finished reading the axolotl&rsquo;s entire DNA &mdash; all
+          <strong>32 billion letters</strong>! That huge map helps them hunt for the cells and messages that switch regrowth on.</p>
+        </div>
+        <div class="science-card">
+          <span class="science-emoji">&#129504;</span>
+          <h3>Dream: Healing People</h3>
+          <p>Researchers hope that one day, lessons from the axolotl could help people <strong>heal spinal-cord
+          injuries, mend damaged hearts, or regrow skin without scars</strong>. Imagine that!</p>
+        </div>
+        <div class="science-card">
+          <span class="science-emoji">&#128150;</span>
+          <h3>2025: Good News!</h3>
+          <p>In <strong>2025</strong>, scientists found that captive-born axolotls could survive in the wild &mdash; a happy
+          clue in the fight to save this <strong>critically endangered</strong> species in Mexico!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MINI QUIZ ================= -->
+    <section class="section quiz-section" id="quiz" data-reveal>
+      <div class="section-head">
+        <p class="eyebrow">Are you ready, explorer?</p>
+        <h2>&#129504; The Axolotl Mini Quiz</h2>
+        <p class="section-sub">5 questions about regrowth &mdash; and the limits too!</p>
+      </div>
+      <div class="quiz-shell" id="quizBox" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p>Axolotl <em>Regrow Lab</em> &middot; part of <a href="index.html"><strong>Animal Discovery HQ</strong></a> &#128153;</p>
+    <p class="foot-note">Made for curious kids aged 8&ndash;9. Facts checked against 2022&ndash;2025 science news. Keep asking questions!</p>
+  </footer>
+
+  <script src="axolotl.js"></script>
+</body>
+</html>

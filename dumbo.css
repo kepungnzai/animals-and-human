@@ -1,0 +1,321 @@
+/* ==========================================================
+   Dumbo Octopus Deep Dive — deep-sea theme (sub-page)
+   Loaded AFTER styles.css, so these overrides only affect
+   the dumbo-octopus.html page.
+   ========================================================== */
+
+body {
+  background: linear-gradient(180deg, #123a7a 0%, #0a1f4d 30%, #051226 62%, #020817 100%);
+  color: #eaf6ff;
+}
+mark { background: var(--gold); color: #1f3a5f; }
+
+.topbar {
+  background: rgba(6, 18, 38, .85);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .35);
+}
+.topnav a {
+  background: rgba(255, 255, 255, .1);
+  color: #cfe8ff;
+}
+.topnav a:hover { background: var(--gold); color: #1f3a5f; }
+.topnav .nav-quiz { background: var(--pink); color: #fff; }
+
+.eyebrow { background: var(--gold); color: #1f3a5f; }
+.section-sub { color: #b9d3ec; }
+section h2 { color: #ffffff; }
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.dumbo-hero {
+  position: relative;
+  padding: 56px 22px 60px;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 26px;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-text { position: relative; z-index: 2; }
+.hero-text h1 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); }
+.hero-sub { font-size: clamp(1.05rem, 2.2vw, 1.28rem); color: #cfe8ff; max-width: 540px; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+.hero-badge {
+  display: inline-block;
+  margin-top: 22px;
+  background: rgba(255, 255, 255, .1);
+  border: 2px dashed rgba(255, 217, 59, .6);
+  color: #ffe9a8;
+  font-weight: 700;
+  padding: .5em 1em;
+  border-radius: 999px;
+}
+.hero-dumbo-svg {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 24px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, .45);
+  animation: hero-glow 5s ease-in-out infinite;
+}
+.wave-divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 54px;
+  background: linear-gradient(180deg, transparent, rgba(2, 8, 23, .55));
+  border-radius: 100% 100% 0 0 / 54px;
+}
+
+/* ==========================================================
+   SQUEEZE section
+   ========================================================== */
+.squeeze-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.squeeze-card {
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 3px solid;
+}
+.squeeze-card--bad { background: rgba(255, 107, 107, .12); border-color: rgba(255, 107, 107, .45); }
+.squeeze-card--good { background: rgba(53, 197, 139, .12); border-color: rgba(53, 197, 139, .5); }
+.squeeze-emoji { font-size: 2.2rem; display: inline-block; animation: bob 2.4s ease-in-out infinite; }
+.squeeze-card h3 { color: #ffffff; }
+.squeeze-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 620px;
+  background: rgba(255, 217, 59, .14);
+  border: 2px dashed rgba(255, 217, 59, .5);
+  border-radius: 16px;
+  padding: 14px 18px;
+  color: #ffe9a8;
+  font-weight: 700;
+}
+
+/* ==========================================================
+   ANATOMY — diagram + cards
+   ========================================================== */
+.anatomy-wrap {
+  display: grid;
+  grid-template-columns: minmax(300px, 5fr) 7fr;
+  gap: 26px;
+  align-items: start;
+}
+.anatomy-figure {
+  margin: 0;
+  position: sticky;
+  top: 96px;
+}
+.anatomy-figure svg {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  box-shadow: var(--shadow-big);
+  background: #0a1f4d;
+}
+.anatomy-figure figcaption {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 700;
+  color: #b9d3ec;
+}
+
+.anatomy-cards { display: grid; gap: 14px; }
+.anatomy-card {
+  background: rgba(255, 255, 255, .08);
+  border: 2px solid rgba(255, 255, 255, .14);
+  border-left: 8px solid var(--cool);
+  border-radius: 16px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: transform .2s, background .3s, border-color .3s, box-shadow .3s;
+}
+.anatomy-card:hover { transform: translateX(6px); }
+.anatomy-card.active {
+  background: rgba(255, 94, 174, .16);
+  border-color: var(--pink);
+  border-left-color: var(--pink);
+  box-shadow: 0 0 0 4px rgba(255, 94, 174, .25);
+}
+.anatomy-card h3 { margin-bottom: .3em; display: flex; align-items: center; gap: 10px; font-size: 1.25rem; }
+.num-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  background: var(--gold);
+  color: #1f3a5f;
+  border-radius: 999px;
+  font-weight: 800;
+}
+.anat-emoji { margin-left: auto; font-size: 1.5rem; }
+.anatomy-card p { color: #d7e9fb; font-size: 1rem; }
+.anatomy-card p em { color: #fff; }
+.mini-power {
+  background: rgba(45, 157, 240, .18);
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin: 10px 0 0;
+  font-size: .95rem !important;
+}
+
+/* numbered dots inside the diagram */
+.anat-dot { cursor: pointer; }
+.anat-dot circle { transition: fill .2s, transform .2s; transform-box: fill-box; transform-origin: center; }
+.anat-dot text { pointer-events: none; }
+.anat-dot { animation: dot-pulse 2.2s ease-in-out infinite; }
+.anat-dot--2 { animation-delay: .3s; }
+.anat-dot--3 { animation-delay: .6s; }
+.anat-dot--1 { animation-delay: .9s; }
+.anat-dot--4 { animation-delay: 1.2s; }
+.anat-dot--5 { animation-delay: 1.5s; }
+.anat-dot--6 { animation-delay: 1.8s; }
+.anat-dot.active { animation: none; }
+.anat-dot.active circle { fill: var(--pink); transform: scale(1.35); }
+.anat-dot:focus circle { stroke: var(--gold); stroke-width: 6; }
+
+/* ==========================================================
+   SUPER POWERS
+   ========================================================== */
+.power-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.power-card {
+  background: rgba(255, 255, 255, .08);
+  border: 2px solid rgba(255, 255, 255, .14);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .2s;
+}
+.power-card:hover { transform: translateY(-6px) rotate(1deg); }
+.power-emoji { font-size: 2.4rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.power-card p { color: #d7e9fb; font-size: .98rem; }
+
+/* ==========================================================
+   DEPTH LADDER
+   ========================================================== */
+.depth-ladder { max-width: 520px; margin: 0 auto; }
+.depth-track {
+  position: relative;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, .18);
+  box-shadow: var(--shadow-big);
+  background: #051226;
+  display: flex;
+  flex-direction: column;
+}
+.depth-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 16px;
+  border-top: 1px dashed rgba(255, 255, 255, .12);
+}
+.depth-step:first-child { border-top: 0; }
+.depth-step .depth-label { font-weight: 800; color: #d7e9fb; }
+.depth-step .depth-note { font-size: .92rem; color: #9fbcd8; }
+.depth-step--home { background: rgba(45, 157, 240, .3); }
+.depth-step--home .depth-note { color: #bfe4ff; font-weight: 700; }
+.depth-step--deep { background: rgba(45, 157, 240, .12); }
+.depth-step--deep .depth-note { color: #d7c2ff; font-weight: 700; }
+.depth-octo {
+  position: absolute;
+  right: 14px;
+  bottom: 6%;
+  font-size: 2.6rem;
+  animation: depth-bob 3.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(212, 138, 255, .8));
+}
+.depth-fact {
+  text-align: center;
+  margin: 20px auto 0;
+  max-width: 560px;
+  color: #d7e9fb;
+  font-weight: 600;
+}
+.depth-fact strong { color: #ffe9a8; }
+
+/* ==========================================================
+   QUIZ — dark theme overrides (reuses styles.css classes)
+   ========================================================== */
+.quiz-shell { background: rgba(255, 255, 255, .07); box-shadow: var(--shadow-big); }
+.quiz-question { color: #ffffff; }
+.quiz-count { color: #bfe4ff; }
+.quiz-progress-wrap { background: rgba(255, 255, 255, .12); }
+.quiz-option {
+  background: rgba(255, 255, 255, .1);
+  color: #eaf6ff;
+}
+.quiz-option:hover { border-color: var(--cool); }
+.quiz-option.is-selected { border-color: #ffffff; }
+.quiz-option.is-correct { background: rgba(53, 197, 139, .3); border-color: var(--green); }
+.quiz-option.is-wrong { background: rgba(255, 107, 107, .3); border-color: var(--wrong); }
+.quiz-option.is-dimmed { opacity: .4; }
+.q-feedback--right { background: rgba(53, 197, 139, .22); }
+.q-feedback--wrong { background: rgba(255, 107, 107, .2); }
+.results-panel .big-score { color: #ff9ede; }
+.site-foot { color: #9fbcd8; }
+.site-foot a { color: #bfe4ff; }
+
+/* ==========================================================
+   KEYFRAMES (sub-page only)
+   ========================================================== */
+@keyframes hero-glow {
+  0%, 100% { box-shadow: 0 18px 44px rgba(0, 0, 0, .45), 0 0 0 0 rgba(212, 138, 255, .25); }
+  50%      { box-shadow: 0 18px 44px rgba(0, 0, 0, .45), 0 0 34px 10px rgba(212, 138, 255, .35); }
+}
+@keyframes dot-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.18); }
+}
+@keyframes depth-bob {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50%      { transform: translateY(-12px) rotate(4deg); }
+}
+@keyframes drift-down {
+  0%   { transform: translateY(0); opacity: 0; }
+  15%  { opacity: .9; }
+  100% { transform: translateY(360px); opacity: .9; }
+}
+.snow { transform-box: fill-box; animation: drift-down linear infinite; }
+.snow--1 { animation-duration: 11s; animation-delay: 0s; }
+.snow--2 { animation-duration: 13s; animation-delay: 2s; }
+.snow--3 { animation-duration: 10s; animation-delay: 4s; }
+.snow--4 { animation-duration: 12s; animation-delay: 1s; }
+.snow--5 { animation-duration: 11s; animation-delay: 6s; }
+.snow--6 { animation-duration: 9s; animation-delay: 3s; }
+.snow--7 { animation-duration: 12s; animation-delay: 7s; }
+.snow--8 { animation-duration: 10s; animation-delay: 5s; }
+@keyframes mini-bob {
+  0%, 100% { transform: translateY(0); }
+  50%     { transform: translateY(7px); }
+}
+.mini-sub { animation: mini-bob 5s ease-in-out infinite; }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 960px) {
+  .dumbo-hero { grid-template-columns: 1fr; }
+  .hero-dumbo-svg { max-width: 460px; }
+  .anatomy-wrap { grid-template-columns: 1fr; }
+  .anatomy-figure { position: static; max-width: 460px; margin: 0 auto; }
+}

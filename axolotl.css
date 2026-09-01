@@ -1,0 +1,272 @@
+/* ==========================================================
+   Axolotl Regrow Lab — pond theme for axolotl-regeneration.html
+   Loaded AFTER styles.css, so these styles only affect this page.
+   ========================================================== */
+
+body {
+  background: linear-gradient(180deg, #8fe3ff 0%, #bfeeff 30%, #eafbff 100%);
+  color: var(--ink);
+}
+mark { background: var(--pink); color: #ffffff; }
+
+.topnav a { background: #e3f6ff; color: var(--cool); }
+.topnav a:hover { background: var(--gold); color: var(--ink); }
+.topnav .nav-quiz { background: var(--pink); color: #fff; }
+
+section h2 { color: var(--ink); }
+.section-sub { color: #3f5f83; }
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.axo-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 26px;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 22px 70px;
+}
+.hero-text h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); }
+.hero-sub { color: #2f5578; font-size: clamp(1.05rem, 2.2vw, 1.28rem); }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+.hero-badge {
+  display: inline-block;
+  margin-top: 22px;
+  background: #fff;
+  border: 3px dashed var(--pink);
+  color: var(--ink);
+  font-weight: 700;
+  padding: .5em 1em;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+.hero-axo-svg {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 26px;
+  box-shadow: var(--shadow-big);
+  background: #bfeeff;
+  animation: hero-bob 5s ease-in-out infinite;
+}
+
+/* regrow stage loop */
+.grow-stage { opacity: 0; transform-box: fill-box; transform-origin: center; animation: stage-appear 4.6s linear infinite; }
+.grow-stage--1 { animation-delay: 0s; }
+.grow-stage--2 { animation-delay: 1.55s; }
+.grow-stage--3 { animation-delay: 3.1s; }
+
+/* tail + sparkles + arrow squashiness for cuteness */
+.axo-tail { animation: bob 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.axo-frontleg { transform-box: fill-box; transform-origin: center; animation: leg-wiggle 2.6s ease-in-out infinite; }
+.sparkle { animation: sparkle-twinkle 2.4s ease-in-out infinite; }
+.sparkle--2 { animation-delay: .6s; }
+.sparkle--3 { animation-delay: 1.1s; }
+.grow-arrow { opacity: .85; animation: grow-nudge 2s ease-in-out infinite; }
+
+/* ==========================================================
+   REASON section
+   ========================================================== */
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.reason-card {
+  background: #ffffff;
+  border: 3px solid var(--mint);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.reason-card--pink { border-color: #ffc4da; background: #fff5f9; }
+.reason-emoji { font-size: 2.2rem; display: inline-block; animation: bob 2.4s ease-in-out infinite; }
+.reason-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 620px;
+  background: #ffffff;
+  border: 3px dashed var(--cool);
+  border-radius: 16px;
+  padding: 12px 18px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* ==========================================================
+   WHAT IT CAN GROW — trading cards
+   ========================================================== */
+.grow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.grow-card {
+  background: linear-gradient(160deg, #ffffff, #eafff4);
+  border: 3px solid var(--green);
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.grow-card:hover { transform: translateY(-6px) rotate(1deg); box-shadow: var(--shadow-big); }
+.grow-emoji { font-size: 2.3rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.grow-card h3 { font-size: 1.15rem; margin: .3em 0 .2em; }
+.grow-card p { color: #3f5f83; font-size: .97rem; margin: 0; }
+
+/* ==========================================================
+   THE SECRET RECIPE
+   ========================================================== */
+.recipe-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 720px;
+  display: grid;
+  gap: 16px;
+}
+.recipe-list li {
+  display: flex;
+  gap: 16px;
+  background: #ffffff;
+  border: 3px solid var(--cool);
+  border-radius: 18px;
+  padding: 18px;
+  align-items: flex-start;
+  box-shadow: var(--shadow);
+}
+.step-num {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background: var(--cool);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  box-shadow: var(--shadow);
+}
+.step-body h3 { margin-bottom: .25em; font-size: 1.2rem; }
+.step-body p { color: #3f5f83; margin: 0; }
+.step-emoji { font-size: 1.3rem; margin-left: 6px; }
+.recipe-extra {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  max-width: 720px;
+  margin: 22px auto 0;
+  background: #fff5fa;
+  border: 3px dashed var(--pink);
+  border-radius: 18px;
+  padding: 16px 18px;
+}
+.recipe-extra-emoji { font-size: 2.2rem; }
+.recipe-extra p { margin: 0; color: #5a3f52; font-weight: 600; }
+
+/* ==========================================================
+   THE REAL LIMITS
+   ========================================================== */
+.limits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.limit-card {
+  background: #fff5f5;
+  border: 3px solid #ffb0a0;
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  transition: transform .2s;
+}
+.limit-card:hover { transform: translateY(-6px) rotate(-1deg); }
+.limit-emoji { font-size: 2.2rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.limit-card h3 { font-size: 1.15rem; margin: .3em 0 .2em; color: #a14b3e; }
+.limit-card p { color: #6b4a44; font-size: .97rem; margin: 0; }
+.limit-callout {
+  max-width: 720px;
+  margin: 22px auto 0;
+  background: #fff0d6;
+  border: 3px solid var(--warm);
+  border-radius: 18px;
+  padding: 16px 20px;
+  font-weight: 600;
+  color: #6b4a1e;
+}
+
+/* ==========================================================
+   SCIENCE section
+   ========================================================== */
+.science-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.science-card {
+  background: linear-gradient(160deg, #ffffff, #edf6ff);
+  border: 3px solid var(--cool);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+.science-emoji { font-size: 2.3rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.science-card h3 { font-size: 1.15rem; }
+.science-card p { color: #3f5f83; font-size: .97rem; margin: 0; }
+
+/* ==========================================================
+   QUIZ — bright overrides (keeps styles.css quiz classes)
+   ========================================================== */
+.quiz-shell { background: #ffffff; box-shadow: var(--shadow-big); }
+.quiz-option { background: #eaf7ff; }
+.quiz-option.is-correct { background: var(--mint); border-color: var(--green); }
+.quiz-option.is-wrong { background: #ffe3e3; border-color: var(--wrong); }
+.q-feedback--right { background: var(--mint); }
+.q-feedback--wrong { background: #ffe9e9; }
+.site-foot a { color: var(--cool); }
+
+/* ==========================================================
+   KEYFRAMES (paste-like pond animations)
+   ========================================================== */
+@keyframes hero-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+@keyframes stage-appear {
+  0%, 18%   { opacity: 0; transform: scale(.45); }
+  32%, 55%  { opacity: 1; transform: scale(1); }
+  68%, 100% { opacity: 0; transform: scale(1.05); }
+}
+@keyframes leg-wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50%      { transform: rotate(3deg); }
+}
+@keyframes sparkle-twinkle {
+  0%, 100% { opacity: .25; transform: scale(.7); }
+  50%      { opacity: 1; transform: scale(1.2); }
+}
+@keyframes grow-nudge {
+  0%, 100% { transform: translateX(0); }
+  50%      { transform: translateX(8px); }
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 960px) {
+  .axo-hero { grid-template-columns: 1fr; }
+  .hero-axo-svg { max-width: 480px; }
+}
+@media (max-width: 560px) {
+  .recipe-list li { flex-direction: column; align-items: flex-start; }
+  .step-num { width: 40px; height: 40px; font-size: 1.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grow-stage { animation: none; opacity: 1; }
+}

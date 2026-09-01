@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake Venom: From Danger to Medicine — Antivenom for Curious Kids (Ages 8-9)</title>
+  <meta name="description" content="How do humans turn snake venom into life-saving antivenom? Milking, horse antibody factories, finding the right key for the right lock, and the truth about universal antivenoms - plus a quiz!">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="snake.css">
+</head>
+<body id="top">
+
+  <header class="topbar">
+    <a href="index.html#top" class="brand"><span class="brand-emoji">&#128013;</span>Venom <em>Lab</em></a>
+    <nav class="topnav" aria-label="Page sections">
+      <a href="index.html">&#127968; Home</a>
+      <a href="#problem">&#128561; The Problem</a>
+      <a href="#make">&#129514; How It's Made</a>
+      <a href="#western">&#128013; The Right Key</a>
+      <a href="#medicine">&#128138; Venom Medicine</a>
+      <a href="#safety">&#129657; Bite Safety</a>
+      <a href="#quiz" class="nav-quiz">&#129504; Mini Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="snake-hero" id="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Sub-page &middot; Amazing science</p>
+        <h1>Snake Venom: <mark>From Danger to Medicine</mark></h1>
+        <p class="hero-sub">
+          Snake venom can hurt &mdash; but <strong>humans turn it into medicine</strong>! Doctors use special
+          <strong>antivenoms</strong> to save people from snakebites. Follow the amazing trail: from a snake&rsquo;s
+          fang &hellip; to a horse &hellip; to a hospital bed. 🐴 &#129504;
+        </p>
+        <div class="hero-actions">
+          <a href="#make" class="btn btn--warm">&#129514; How Is Antivenom Made?</a>
+          <a href="#western" class="btn btn--cool">&#128013; One Antivenom for ALL Snakes?</a>
+        </div>
+        <p class="hero-badge">&#128240; Scientists made a NEW synthetic antivenom in <strong>2024</strong>!</p>
+      </div>
+
+      <svg class="hero-snake-svg" viewBox="0 0 520 400" role="img" aria-label="A snake is milked: it bites a membrane stretched over a glass flask as golden venom drops fall, with a friendly horse and a medicine bottle nearby">
+        <defs>
+          <linearGradient id="sn-bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#d7f5d0"/>
+            <stop offset="1" stop-color="#fdf3d9"/>
+          </linearGradient>
+          <linearGradient id="sn-body" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8fa94f"/>
+            <stop offset="1" stop-color="#5c7430"/>
+          </linearGradient>
+          <linearGradient id="sn-venom" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffd94d"/>
+            <stop offset="1" stop-color="#e8a20c"/>
+          </linearGradient>
+        </defs>
+        <rect width="520" height="400" fill="url(#sn-bg)"/>
+
+        <!-- sun -->
+        <circle cx="470" cy="60" r="34" fill="#ffd94d" opacity=".9"/>
+        <circle cx="470" cy="60" r="46" fill="none" stroke="#ffd94d" stroke-width="3" opacity=".35"/>
+
+        <!-- ground -->
+        <path d="M 0 360 Q 130 340 260 358 Q 390 376 520 356 L 520 400 L 0 400 Z" fill="#e7c684"/>
+
+        <!-- grass tufts -->
+        <path d="M 40 356 Q 55 330 62 356 M 70 358 Q 82 336 92 358 M 440 352 Q 452 330 462 352 M 470 354 Q 480 336 488 356" stroke="#5c7430" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+        <!-- friendly horse (antibody factory) -->
+        <g class="sn-horse">
+          <ellipse cx="96" cy="330" rx="52" ry="30" fill="#b06a3b"/>
+          <rect x="112" y="292" width="26" height="30" rx="10" fill="#b06a3b"/>
+          <circle cx="118" cy="288" r="9" fill="#ffffff"/>
+          <circle cx="120" cy="287" r="2.6" fill="#2a1a4a"/>
+          <path d="M 60 340 l -24 -14 M 96 358 l -14 16 M 132 358 l 12 16" stroke="#b06a3b" stroke-width="7" stroke-linecap="round" fill="none"/>
+          <path d="M 128 296 q 16 -20 34 -14 q -18 6 -22 22 Z" fill="#8a5240"/>
+          <text class="horse-tag" x="118" y="376" font-size="13" font-weight="800" fill="#6b4a1e">ANTIBODY</text>
+        </g>
+
+        <!-- lab bench -->
+        <rect x="330" y="330" width="170" height="26" rx="6" fill="#c9a45f"/>
+
+        <!-- flask -->
+        <path d="M 402 330 l -18 -52 h 36 Z" fill="#cfe9f5" stroke="#5a7a92" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M 386 278 h 40 M 400 246 l 12 32 v 0" stroke="#5a7a92" stroke-width="3" fill="none"/>
+        <path d="M 384 220 h 44 l 6 26 h -56 Z" fill="#cfe9f5" stroke="#5a7a92" stroke-width="3" fill="none"/>
+        <ellipse class="venom-pool" cx="410" cy="326" rx="16" ry="5" fill="#ffd94d"/>
+        <rect x="422" y="300" width="54" height="30" rx="5" fill="#ffffff" stroke="#b06a3b" stroke-width="3"/>
+        <text x="449" y="320" text-anchor="middle" font-size="12" font-weight="800" fill="#a14b3e">ANTIVENOM</text>
+
+        <!-- venom drops -->
+        <circle class="venom-drop venom-drop--1" cx="390" cy="300" r="5" fill="url(#sn-venom)"/>
+        <circle class="venom-drop venom-drop--2" cx="418" cy="312" r="4" fill="url(#sn-venom)"/>
+        <circle class="venom-drop venom-drop--3" cx="406" cy="320" r="4.5" fill="url(#sn-venom)"/>
+
+        <!-- the snake -->
+        <g class="sn-snake">
+          <path d="M 120 96 C 180 60 280 58 348 108 C 400 148 428 196 446 240" stroke="url(#sn-body)" stroke-width="26" stroke-linecap="round" fill="none"/>
+          <circle cx="120" cy="96" r="17" fill="url(#sn-body)"/>
+          <!-- head biting membrane -->
+          <path d="M 446 240 l 34 6 l 6 22 l -40 -8 Z" fill="url(#sn-body)" stroke="#465a26" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="452" cy="248" r="5" fill="#2a1a4a"/>
+          <circle cx="472" cy="260" r="4" fill="#2a1a4a"/>
+          <path d="M 478 266 l -12 18" stroke="#c8d23f" stroke-width="3" fill="none"/>
+          <!-- scales -->
+          <circle cx="230" cy="84" r="4" fill="#465a26" opacity=".55"/>
+          <circle cx="300" cy="86" r="4" fill="#465a26" opacity=".55"/>
+          <circle cx="360" cy="122" r="4" fill="#465a26" opacity=".55"/>
+          <circle cx="408" cy="182" r="4" fill="#465a26" opacity=".55"/>
+        </g>
+
+        <!-- gloved hand holding snake -->
+        <g class="sn-hand">
+          <path d="M 486 128 q 24 6 18 34 q -4 20 -34 26 q -14 -20 -2 -38 q 8 -12 18 -22 Z" fill="#e8b45a"/>
+          <path d="M 470 150 q 6 14 20 12" stroke="#c9963e" stroke-width="4" fill="none"/>
+        </g>
+
+        <!-- sparkles -->
+        <text class="sn-sparkle" x="330" y="210" font-size="20">&#10024;</text>
+        <text class="sn-sparkle sn-sparkle--2" x="180" y="120" font-size="16">&#10024;</text>
+      </svg>
+    </section>
+
+    <!-- ================= THE PROBLEM ================= -->
+    <section class="section problem-section" id="problem">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128561; Big numbers</p>
+        <h2>Snakebites Are a Real Problem</h2>
+        <p class="section-sub">That&rsquo;s why doctors work so hard to make antivenom!</p>
+      </div>
+
+      <div class="stat-grid" data-reveal>
+        <div class="stat-card">
+          <span class="stat-num">5.4</span><span class="stat-unit">million</span>
+          <p>people are <strong>bitten by snakes</strong> every year all around the world.</p>
+        </div>
+        <div class="stat-card stat-card--hot">
+          <span class="stat-num">2.7</span><span class="stat-unit">million</span>
+          <p>of those bites inject venom (called <em>envenoming</em>) and need hospital care.</p>
+        </div>
+        <div class="stat-card stat-card--red">
+          <span class="stat-num">100k+</span><span class="stat-unit">deaths</span>
+          <p>about 81,000&ndash;138,000 people sadly die each year &mdash; often because antivenom reaches them too late.</p>
+        </div>
+      </div>
+
+      <p class="problem-note" data-reveal>Farmers, kids and people who work outdoors are the ones most often bitten. That&rsquo;s why <strong>antivenom must be ready in the right places, at the right time</strong>!</p>
+    </section>
+
+    <!-- ================= HOW IT'S MADE ================= -->
+    <section class="section make-section" id="make">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#129514; It takes a team</p>
+        <h2>How Is Antivenom Made? Four Big Steps</h2>
+        <p class="section-sub">From a snake&rsquo;s fang to the hospital &mdash; here&rsquo;s the whole journey!</p>
+      </div>
+
+      <div class="steps" data-reveal>
+        <article class="step-card">
+          <span class="step-medal">&#129351;</span>
+          <h3>1 &middot; Milking the Venom</h3>
+          <p>Trained experts gently press a snake to bite a thin cover stretched over a glass jar. Venom drips out like
+          <strong>tiny golden drops</strong>. One &ldquo;milking&rdquo; gives only a <em>few drops</em> &mdash; so it takes many
+          snakes and many milkings to get enough!</p>
+        </article>
+        <article class="step-card">
+          <span class="step-medal">&#129352;</span>
+          <h3>2 &middot; The Horse Factory</h3>
+          <p>Small, safe doses of that venom are injected into a <strong>horse</strong> (sometimes sheep, donkey or camel).
+          The horse&rsquo;s immune system does something amazing: it builds <strong>antibodies</strong> &mdash; special
+          &ldquo;venom catchers&rdquo; &mdash; and keeps making more after each booster shot.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-medal">&#129353;</span>
+          <h3>3 &middot; Treasure in the Blood</h3>
+          <p>Scientists collect some blood from the horse, then purify just the <strong>antibodies</strong>. They even
+          freeze-dry it into a <strong>powder that keeps for up to 5 years</strong> at room temperature &mdash; perfect for
+          sending to faraway villages!</p>
+        </article>
+        <article class="step-card">
+          <span class="step-medal">&#127942;</span>
+          <h3>4 &middot; The Shot That Saves</h3>
+          <p>At the hospital, the antivenom goes into the bitten person&rsquo;s body by <strong>injection</strong>. The
+          antibodies cruise through the blood, grab the venom, and make it harmless &mdash; doctors call this
+          <strong>neutralizing</strong> the venom.</p>
+        </article>
+      </div>
+
+      <p class="make-note" data-reveal>This idea was born long ago from <strong>vaccines</strong>: Edward Jenner showed that small doses
+      of a disease could make your body fight it. Antivenom uses the same trick &mdash; but the training happens in a
+      horse, and the ready-made fighters go to the person!</p>
+    </section>
+
+    <!-- ================= THE RIGHT KEY ================= -->
+    <section class="section western-section" id="western">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128273; Lock and key</p>
+        <h2>Can ONE Antivenom Help with ALL Snake Bites?</h2>
+        <p class="section-sub">Short answer: <strong>NO &mdash; it must match the snake!</strong> Here&rsquo;s why:</p>
+      </div>
+
+      <div class="lock-grid" data-reveal>
+        <div class="lock-card">
+          <span class="lock-emoji">&#128273;</span>
+          <h3>Every Venom Is a Different Lock</h3>
+          <p>Snake venom is a mixture of lots of different toxins &mdash; and a cobra&rsquo;s venom is <strong>not the same</strong>
+          as a viper&rsquo;s. The toxins are like <strong>different locks</strong> on different doors.</p>
+        </div>
+        <div class="lock-card">
+          <span class="lock-emoji">&#128273;&#65039;</span>
+          <h3>Antibodies Are the Keys</h3>
+          <p>An antibody is like a <strong>specific key</strong>. It only grabs the exact toxin it was trained to catch.
+          Put the wrong key in the wrong lock &mdash; nothing opens!</p>
+        </div>
+      </div>
+
+      <div class="venom-types" data-reveal>
+        <div class="venom-type">
+          <span class="type-emoji">&#128013;</span>
+          <h3>Monovalent</h3>
+          <p>Made from <strong>ONE snake species</strong> &mdash; super strong, but only for that one snake.</p>
+        </div>
+        <div class="venom-type venom-type--poly">
+          <span class="type-emoji">&#128014;</span>
+          <h3>Polyvalent</h3>
+          <p>Made by mixing venom from <strong>several snakes that live in the same region</strong>, so one bottle can cover a
+          whole hospital&rsquo;s local snakes!</p>
+        </div>
+      </div>
+
+      <p class="key-note" data-reveal>Hospitals keep antivenoms for the <strong>snakes that live near them</strong>. When someone is bitten,
+      doctors ask: <em>&ldquo;What did the snake look like?&rdquo;</em> because picking the right &ldquo;key&rdquo; matters!
+      It&rsquo;s why scientists dream of a <strong>universal antivenom</strong> that works for many snakes at once &mdash; and in
+      <strong>2024</strong>, a new synthetic antibody already worked against fast-acting toxins from <strong>four deadly
+      snake species</strong> in Asia and Africa. One day, one bottle might help everyone!</p>
+    </section>
+
+    <!-- ================= VENOM BECOMES MEDICINE ================= -->
+    <section class="section medicine-section" id="medicine">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128138; Bonus: cures!</p>
+        <h2>Venom Can Become Other Medicines Too</h2>
+        <p class="section-sub">Snakes make poisons &mdash; scientists make <strong>medicine</strong> from them!</p>
+      </div>
+
+      <div class="medicine-grid" data-reveal>
+        <div class="medicine-card">
+          <span class="medicine-emoji">&#128138;</span>
+          <h3>Blood-Pressure Pill</h3>
+          <p>A medicine called <strong>Captopril</strong> was invented after scientists studied the venom of the
+          <em>jararaca</em> pit viper from Brazil. Today millions of people take its family of pills to help their
+          hearts!</p>
+        </div>
+        <div class="medicine-card">
+          <span class="medicine-emoji">&#129657;</span>
+          <h3>Bleeding Helpers</h3>
+          <p>Some proteins from snake venom are used in <strong>clotting tests</strong> and to make glue that stops heavy
+          bleeding during surgery.</p>
+        </div>
+        <div class="medicine-card">
+          <span class="medicine-emoji">&#129503;&#65039;</span>
+          <h3>Future Cures</h3>
+          <p>Researchers are testing venom ingredients for <strong>new pain-killers, blood thinners and stroke
+          treatments</strong>. Today&rsquo;s poison could be tomorrow&rsquo;s medicine!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BITE SAFETY ================= -->
+    <section class="section safety-section" id="safety">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#129657; Important</p>
+        <h2>If a Snake Bites Someone: S.T.O.P. Rules</h2>
+        <p class="section-sub">Knowing what to do (and NOT do) can save a life. Share this with your family!</p>
+      </div>
+
+      <div class="safety-grid">
+        <div class="safety-card safety-card--do" data-reveal>
+          <span class="safety-emoji">&#128077;</span>
+          <h3>DO &mdash; the smart things</h3>
+          <ul>
+            <li><strong>S</strong>tay calm and <strong>S</strong>tay still &mdash; moving fast spreads venom faster.</li>
+            <li><strong>T</strong>ake off tight rings or bracelets (the bite area can swell).</li>
+            <li><strong>O</strong>btain help: call an ambulance / get to a hospital FAST.</li>
+            <li><strong>P</strong>hoto (from a safe distance, never close!) or describe what the snake looked like.</li>
+          </ul>
+        </div>
+        <div class="safety-card safety-card--dont" data-reveal>
+          <span class="safety-emoji">&#128078;</span>
+          <h3>DON&rsquo;T &mdash; old myths!</h3>
+          <ul>
+            <li><strong>Never suck the venom out</strong> with your mouth &mdash; it doesn&rsquo;t work and can hurt the rescuer too.</li>
+            <li><strong>Never cut or squeeze</strong> the wound.</li>
+            <li><strong>Never tie a tight band</strong> &mdash; it can damage the bitten arm or leg.</li>
+            <li><strong>Never chase or catch</strong> the snake to &ldquo;show the doctor&rdquo; &mdash; that puts you in danger!</li>
+          </ul>
+        </div>
+      </div>
+      <p class="safety-note" data-reveal>The <strong>best first-aid is the antivenom at the hospital</strong> &mdash; plus your calm,
+      quick thinking. You&rsquo;re already great at that! &#128170;</p>
+    </section>
+
+    <!-- ================= MINI QUIZ ================= -->
+    <section class="section quiz-section" id="quiz" data-reveal>
+      <div class="section-head">
+        <p class="eyebrow">Are you ready, explorer?</p>
+        <h2>&#129504; The Venom-to-Medicine Mini Quiz</h2>
+        <p class="section-sub">5 questions about antivenom &mdash; the right key, the right snake, the right move!</p>
+      </div>
+      <div class="quiz-shell" id="quizBox" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p>Venom <em>Lab</em> &middot; part of <a href="index.html"><strong>Animal Discovery HQ</strong></a> &#128153;</p>
+    <p class="foot-note">Made for curious kids aged 8&ndash;9. Facts checked against WHO and 2024&ndash;2025 science news. Always follow real doctors&rsquo; advice for snakebites!</p>
+  </footer>
+
+  <script src="snake.js"></script>
+</body>
+</html>

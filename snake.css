@@ -1,0 +1,284 @@
+/* ==========================================================
+   Snake Venom Lab — savanna-lab theme for snake-antivenom.html
+   Loaded AFTER styles.css, so these styles only affect this page.
+   ========================================================== */
+
+body {
+  background: linear-gradient(180deg, #d7f5d0 0%, #f6ecd0 45%, #fdf6e3 100%);
+  color: var(--ink);
+}
+mark { background: var(--warm); color: #fff; }
+
+.topnav a { background: #eef5d8; color: #6b7a1e; }
+.topnav a:hover { background: var(--gold); color: var(--ink); }
+.topnav .nav-quiz { background: var(--pink); color: #fff; }
+
+section h2 { color: var(--ink); }
+.section-sub { color: #5c6b3a; }
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.snake-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 26px;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 22px 70px;
+}
+.hero-text h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); }
+.hero-sub { color: #4c5f2f; font-size: clamp(1.05rem, 2.2vw, 1.28rem); }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+.hero-badge {
+  display: inline-block;
+  margin-top: 22px;
+  background: #fff;
+  border: 3px dashed var(--warm);
+  color: var(--ink);
+  font-weight: 700;
+  padding: .5em 1em;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+.hero-snake-svg {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 26px;
+  box-shadow: var(--shadow-big);
+  animation: hero-float 5s ease-in-out infinite;
+}
+
+/* snake sway + tail */
+.sn-snake { transform-box: fill-box; transform-origin: center; animation: snake-sway 4s ease-in-out infinite; }
+.horse-tag { animation: horse-sway 1.8s ease-in-out infinite; }
+.sn-hand { animation: hand-bob 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.sn-snake { animation-duration: 6s; }
+
+/* venom drops */
+.venom-drop { transform-box: fill-box; transform-origin: top center; animation: venom-fall 2.4s ease-in infinite; }
+.venom-drop--2 { animation-delay: .8s; }
+.venom-drop--3 { animation-delay: 1.6s; }
+.venom-pool { animation: pool-glow 2.4s ease-in-out infinite; }
+
+/* sparkles */
+.sn-sparkle { animation: sn-sparkle 2.2s ease-in-out infinite; }
+.sn-sparkle--2 { animation-delay: .7s; }
+
+/* ==========================================================
+   PROBLEM section
+   ========================================================== */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.stat-card {
+  background: #ffffff;
+  border: 3px solid var(--green);
+  border-radius: var(--radius);
+  padding: 22px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.stat-card--hot { border-color: var(--warm); background: #fff8ec; }
+.stat-card--red { border-color: #ff8b8b; background: #fff2f2; }
+.stat-num { display: block; font-size: 2.6rem; font-weight: 800; color: var(--green); line-height: 1; }
+.stat-card--hot .stat-num { color: var(--warm); }
+.stat-card--red .stat-num { color: var(--wrong); }
+.stat-unit { font-weight: 800; color: var(--ink-soft); }
+.stat-card p { color: #4c5f2f; font-size: .97rem; margin: .6em 0 0; }
+.problem-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 640px;
+  background: #fff0d6;
+  border: 3px dashed var(--warm);
+  border-radius: 16px;
+  padding: 12px 18px;
+  font-weight: 600;
+}
+
+/* ==========================================================
+   HOW IT'S MADE — steps
+   ========================================================== */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+.step-card {
+  background: #ffffff;
+  border: 3px solid var(--cool);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.step-card:hover { transform: translateY(-6px) rotate(1deg); box-shadow: var(--shadow-big); }
+.step-medal { font-size: 2.2rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.step-card h3 { font-size: 1.15rem; margin: .3em 0 .2em; color: var(--cool); }
+.step-card p { color: #4c5f2f; font-size: .96rem; margin: 0; }
+.make-note {
+  max-width: 720px;
+  margin: 22px auto 0;
+  background: #eef5d8;
+  border: 3px solid #b6c96a;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-weight: 600;
+  color: #55662a;
+}
+
+/* ==========================================================
+   RIGHT KEY (specificity)
+   ========================================================== */
+.lock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.lock-card {
+  background: #ffffff;
+  border: 3px solid var(--gold);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+.lock-emoji { font-size: 2.2rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.lock-card h3 { font-size: 1.15rem; }
+.lock-card p { color: #4c5f2f; font-size: .97rem; margin: 0; }
+
+.venom-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+.venom-type {
+  background: #fff8ec;
+  border: 3px solid var(--warm);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+.venom-type--poly {
+  background: #edf7ff;
+  border-color: var(--cool);
+}
+.type-emoji { font-size: 2.2rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.venom-type h3 { font-size: 1.15rem; }
+.venom-type p { color: #4c5f2f; font-size: .97rem; margin: 0; }
+
+.key-note {
+  max-width: 720px;
+  margin: 22px auto 0;
+  background: #fff;
+  border: 3px dashed var(--cool);
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-weight: 600;
+  color: #40536a;
+}
+
+/* ==========================================================
+   MEDICINE + SAFETY
+   ========================================================== */
+.medicine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+.medicine-card {
+  background: linear-gradient(160deg, #fff, #eaf7ff);
+  border: 3px solid var(--cool);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+.medicine-emoji { font-size: 2.2rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.medicine-card h3 { font-size: 1.15rem; }
+.medicine-card p { color: #4c5f2f; font-size: .96rem; margin: 0; }
+
+/* safety */
+.safety-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+.safety-card {
+  border-radius: 18px;
+  padding: 20px;
+}
+.safety-card--do { background: #eafff4; border: 3px solid var(--green); }
+.safety-card--dont { background: #fff2f2; border: 3px solid #ff8b8b; }
+.safety-emoji { font-size: 2.1rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.safety-card ul { padding-left: 1.3em; margin: 0; }
+.safety-card li { margin: .5em 0; color: #4c5f2f; font-weight: 600; }
+.safety-card--dont li { color: #8a4a40; }
+.safety-note {
+  text-align: center;
+  margin: 20px auto 0;
+  max-width: 620px;
+  background: #fff0d6;
+  border: 3px dashed var(--warm);
+  border-radius: 16px;
+  padding: 12px 18px;
+  font-weight: 700;
+}
+
+/* quiz overrides - bright */
+.quiz-shell { background: #ffffff; box-shadow: var(--shadow-big); }
+.quiz-option { background: #eaf7ff; }
+.quiz-option.is-correct { background: var(--mint); border-color: var(--green); }
+.quiz-option.is-wrong { background: #ffe3e3; border-color: var(--wrong); }
+.q-feedback--right { background: var(--mint); }
+.q-feedback--wrong { background: #ffe9e9; }
+.site-foot a { color: var(--cool); }
+
+/* ==========================================================
+   KEYFRAMES
+   ========================================================== */
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+@keyframes snake-sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50%      { transform: rotate(2deg); }
+}
+@keyframes hand-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+@keyframes horse-sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50%      { transform: rotate(3deg); }
+}
+@keyframes venom-fall {
+  0%   { transform: translateY(0) scale(1); opacity: 0; }
+  12%  { opacity: 1; }
+  100% { transform: translateY(24px) scale(.9); opacity: .9; }
+}
+@keyframes pool-glow {
+  0%, 100% { transform: scaleX(1); opacity: .9; }
+  50%      { transform: scaleX(1.15); opacity: 1; }
+}
+@keyframes sn-sparkle {
+  0%, 100% { opacity: .3; transform: scale(.7) rotate(0); }
+  50%      { opacity: 1; transform: scale(1.2) rotate(12deg); }
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 960px) {
+  .snake-hero { grid-template-columns: 1fr; }
+  .hero-snake-svg { max-width: 500px; }
+}
+@media (max-width: 560px) {
+  .stat-num { font-size: 2.1rem; }
+}
