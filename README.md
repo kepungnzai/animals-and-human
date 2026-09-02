@@ -25,6 +25,25 @@ with animated illustrations and an interactive quiz at the end.
 | `snake-antivenom.html` | Sub-page: Snake venom to medicine (see below)                     |
 | `snake.css`        | Savanna-lab theme + steps / lock-and-key / safety styles             |
 | `snake.js`         | Sub-page interactions: scroll reveal + 6-question mini quiz          |
+| `naked-mole-rat.html` | Sub-page: Naked mole-rat superpowers (see below)                  |
+| `molerat.css`      | Underground-earth theme + superpowers / engineering styles           |
+| `molerat.js`       | Sub-page interactions: scroll reveal + 6-question mini quiz          |
+
+## Sub-page: `naked-mole-rat.html` 🐀
+From the Deep-Dive grid on the main page → “Naked Mole-Rat → Dig in!”, or open the file directly.
+
+It answers: **why is the naked mole-rat special (cancer resistance + low-oxygen tolerance),
+and what are scientists engineering from what they learned?**
+- **Meet the Mole-Rat** — East Africa, ~8–10 cm, wrinkly pink skin, moving buck teeth, a “queen”.
+- **Superpowers**
+  1. Nearly cancer-proof (2009 double-lock p16+p27; 2013 giant HMW-HA jelly-sugar cover story in
+     *Nature* + error-free ribosomes; *Science* “Vertebrate of the Year 2013”).
+  2. Survives 18 min with zero oxygen & 5 hours at 5% oxygen; heart ~200→50 bpm; 2017 plant-like
+     fructose trick (*Science*).
+  3. Lives 37+ years (longest-lived rodent); “negligible senescence” (mortality doesn’t rise with age).
+- **Science Lab: What we’re engineering** — 2023: transferred the mole-rat’s Has2 gene into mice →
+  healthier + ~4.4% longer life; ribosome research; dreams of stroke/heart-attack protection.
+- **Mini Quiz** — 6 questions with explanations, stars and confetti.
 
 ## Sub-page: `snake-antivenom.html` 🐍
 From the featured Anaconda card → “How Does Venom Become Antivenom?”, or open the file directly.

@@ -1,0 +1,209 @@
+/* ==========================================================
+   Naked Mole-Rat Underground Lab — earth/underground theme
+   Loaded AFTER styles.css, so these styles only affect this page.
+   ========================================================== */
+
+body {
+  background: linear-gradient(180deg, #fdeabb 0%, #f6d88f 28%, #c9995a 62%, #8a5a28 100%);
+  color: var(--ink);
+}
+mark { background: var(--warm); color: #fff; }
+
+.topnav a { background: rgba(255, 255, 255, .6); color: #6a4a1e; }
+.topnav a:hover { background: var(--gold); color: var(--ink); }
+.topnav .nav-quiz { background: var(--pink); color: #fff; }
+
+section h2 { color: var(--ink); }
+.section-sub { color: #5b3d1c; }
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.mole-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 26px;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 22px 70px;
+}
+.hero-text h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); color: #3d2508; }
+.hero-text mark { background: var(--gold); color: #3d2508; }
+.hero-sub { color: #4a3010; font-size: clamp(1.05rem, 2.2vw, 1.28rem); }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+.hero-badge {
+  display: inline-block;
+  margin-top: 22px;
+  background: #fff7e0;
+  border: 3px dashed var(--warm);
+  color: #5b3d1c;
+  font-weight: 700;
+  padding: .5em 1em;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+.hero-mole-svg {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 26px;
+  box-shadow: var(--shadow-big);
+}
+
+.mr-rat { transform-box: fill-box; transform-origin: center; animation: rat-bob 3.2s ease-in-out infinite; }
+.mr-buddy { transform-box: fill-box; transform-origin: center; animation: rat-bob 3.2s ease-in-out infinite .5s; }
+.mr-labels text { animation: label-blink 2.6s ease-in-out infinite; }
+
+/* ==========================================================
+   MEET section
+   ========================================================== */
+.meet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.meet-card {
+  background: #fff7e0;
+  border: 3px solid var(--gold);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.meet-card:hover { transform: translateY(-5px) rotate(-1deg); }
+.meet-emoji { font-size: 2.3rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.meet-card h3 { font-size: 1.15rem; margin: .3em 0 .2em; color: #6a4a1e; }
+.meet-card p { color: #5b3d1c; font-size: .96rem; margin: 0; }
+.meet-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 640px;
+  background: #fff7e0;
+  border: 3px dashed var(--warm);
+  border-radius: 16px;
+  padding: 12px 18px;
+  font-weight: 700;
+  color: #5b3d1c;
+}
+
+/* ==========================================================
+   SUPER POWERS
+   ========================================================== */
+.super-block {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: #fff8e8;
+  border: 3px solid var(--gold);
+  border-radius: 20px;
+  padding: 22px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+.super-block:nth-of-type(2) { border-color: var(--cool); background: #eef7ff; }
+.super-block:nth-of-type(3) { border-color: var(--green); background: #eaffe4; }
+.super-badge {
+  flex: 0 0 auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+.super-badge--cancer { background: var(--warm); }
+.super-badge--oxygen { background: var(--cool); }
+.super-badge--age { background: var(--green); }
+.super-num { line-height: 1; }
+.super-body h3 { margin-bottom: .3em; font-size: 1.3rem; }
+.super-body > p { color: #5b3d1c; }
+.super-detail {
+  background: rgba(255, 255, 255, .75);
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin: 8px 0;
+}
+.super-detail p { margin: .4em 0; font-size: .97rem; color: #5b3d1c; }
+.super-tagline {
+  background: var(--gold);
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-weight: 700;
+  color: #3d2508;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* ==========================================================
+   ENGINEERING section
+   ========================================================== */
+.eng-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.eng-card {
+  background: #fff7e0;
+  border: 3px solid var(--cool);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.eng-card:hover { transform: translateY(-6px) rotate(1deg); box-shadow: var(--shadow-big); }
+.eng-card--done { border-color: var(--green); background: #eaffe4; }
+.eng-emoji { font-size: 2.3rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.eng-card h3 { font-size: 1.1rem; margin: .3em 0 .2em; }
+.eng-card p { color: #5b3d1c; font-size: .95rem; margin: 0; }
+.eng-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 700px;
+  background: #fff0d6;
+  border: 3px dashed var(--warm);
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-weight: 600;
+  color: #6b4a1e;
+}
+
+/* ==========================================================
+   QUIZ + FOOTER overrides
+   ========================================================== */
+.quiz-shell { background: #fff7e0; box-shadow: var(--shadow-big); }
+.quiz-option { background: #ffffff; }
+.quiz-option.is-correct { background: var(--mint); border-color: var(--green); }
+.quiz-option.is-wrong { background: #ffe3e3; border-color: var(--wrong); }
+.q-feedback--right { background: var(--mint); }
+.q-feedback--wrong { background: #ffe9e9; }
+.site-foot { color: #5b3d1c; }
+.site-foot a { color: #6a4a1e; }
+
+/* ==========================================================
+   KEYFRAMES
+   ========================================================== */
+@keyframes rat-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+@keyframes label-blink {
+  0%, 100% { opacity: .55; }
+  50%      { opacity: 1; }
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 960px) {
+  .mole-hero { grid-template-columns: 1fr; }
+  .hero-mole-svg { max-width: 520px; }
+}
+@media (max-width: 560px) {
+  .super-block { flex-direction: column; }
+}
