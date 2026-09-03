@@ -28,6 +28,24 @@ with animated illustrations and an interactive quiz at the end.
 | `naked-mole-rat.html` | Sub-page: Naked mole-rat superpowers (see below)                  |
 | `molerat.css`      | Underground-earth theme + superpowers / engineering styles           |
 | `molerat.js`       | Sub-page interactions: scroll reveal + 6-question mini quiz          |
+| `seastar-regeneration.html` | Sub-page: Sea star regeneration (see below)                    |
+| `seastar.css`      | Coral-reef theme + how-it-grows steps / DNA section styles           |
+| `seastar.js`       | Sub-page interactions: scroll reveal + 6-question mini quiz          |
+
+## Sub-page: `seastar-regeneration.html` 🌊
+From the Deep-Dive grid on the main page → “Sea Star Regeneration → Dive in!”, or open the file directly.
+
+It answers: **how does a sea star regrow lost arms completely, is it in their DNA, and what are
+researchers learning for human limb regrowth?**
+- **Meet the Sea Star** — not a fish, no brain/blood, water vascular system + tube feet, arm-tip eye spots, ~1,900 species.
+- **How It Grows Back** — why (autotomy = drop the grabbed arm; comet form = new star from one arm + disc), then 5 steps:
+  seal wound → rebuild the watery inside (coelom) → the tip with the terminal tube foot grows first →
+  cells dedifferentiate into “builder cells” → weeks-to-months of growth (faster in warm water).
+- **Is It Their DNA?** — YES. DNA is the recipe book; *gene expression* is which recipes cook. Re-growing re-activates
+  embryo/baby building genes; key families: Wnt, BMP, FGF, retinoic acid, Hox. Tool: single-cell RNA-seq; 2022–23 sea-star “cell maps”.
+- **For Human Healing** — why humans scar instead of regrow, the research dream (fingertips, organs, spinal-cord healing),
+  human stem-cell limits (Wikipedia notes human-medicine implications), people already regrow a little (liver/skin/fingertip tips).
+- **Mini Quiz** — 6 questions with explanations, stars and confetti.
 
 ## Sub-page: `naked-mole-rat.html` 🐀
 From the Deep-Dive grid on the main page → “Naked Mole-Rat → Dig in!”, or open the file directly.

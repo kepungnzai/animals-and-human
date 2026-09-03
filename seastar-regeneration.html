@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sea Stars: Growing Arms Back — Regeneration Science for Curious Kids (Ages 8–9)</title>
+  <meta name="description" content="Sea stars regrow whole lost arms — and researchers read their gene-expression 'recipe' to learn how humans might regrow limbs too. Is it their DNA? Find out, then take the quiz!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="seastar.css">
+</head>
+<body id="top">
+
+  <header class="topbar">
+    <a href="index.html#top" class="brand"><span class="brand-emoji">&#127754;</span>Sea Star <em>Reef Lab</em></a>
+    <nav class="topnav" aria-label="Page sections">
+      <a href="index.html">&#127968; Home</a>
+      <a href="#meet">&#11088; Meet the Sea Star</a>
+      <a href="#how">&#129504; How It Grows Back</a>
+      <a href="#dna">&#129516; Is It Their DNA?</a>
+      <a href="#humans">&#128138; For Human Healing</a>
+      <a href="#quiz" class="nav-quiz">&#129504; Mini Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="ss-hero" id="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Sub-page &middot; Regeneration science</p>
+        <h1>Sea Stars: <mark>Growing Their Arms Back</mark></h1>
+        <p class="hero-sub">
+          A sea star can <strong>regrow a completely lost arm</strong> &mdash; and some can even grow a whole new
+          body from one single arm! In this page we&rsquo;ll ask the big question:
+          <em>&ldquo;HOW is that possible&hellip; is it in their DNA?&rdquo;</em> And it turns out: <strong>YES</strong> &mdash; and
+          scientists are reading that DNA recipe to learn about <strong>healing people too</strong>!
+        </p>
+        <div class="hero-actions">
+          <a href="#how" class="btn btn--warm">&#129504; See How It Grows Back</a>
+          <a href="#dna" class="btn btn--cool">&#129516; Is It Their DNA?</a>
+        </div>
+        <p class="hero-badge">&#128240; Scientists now read each cell&rsquo;s genes while arms regrow!</p>
+      </div>
+
+      <svg class="hero-ss-svg" viewBox="0 0 540 420" role="img" aria-label="A cute orange sea star on the sandy sea floor, with one arm growing back in three stages">
+        <defs>
+          <linearGradient id="ss-sea" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7ee8e0"/>
+            <stop offset="1" stop-color="#bff7f0"/>
+          </linearGradient>
+          <linearGradient id="ss-sand" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fde2b3"/>
+            <stop offset="1" stop-color="#f3c988"/>
+          </linearGradient>
+          <radialGradient id="ss-body" cx=".5" cy=".45" r=".7">
+            <stop offset="0" stop-color="#ff9e6d"/>
+            <stop offset="1" stop-color="#f0643a"/>
+          </radialGradient>
+          <radialGradient id="ss-arm" cx=".5" cy=".5" r=".7">
+            <stop offset="0" stop-color="#ffaa7a"/>
+            <stop offset="1" stop-color="#e2582e"/>
+          </radialGradient>
+        </defs>
+
+        <rect width="540" height="360" fill="url(#ss-sea)"/>
+        <path d="M 0 330 Q 135 310 270 328 Q 405 346 540 326 L 540 360 L 0 360 Z" fill="url(#ss-sand)"/>
+
+        <!-- bubbles -->
+        <ellipse class="bubble bubble--1" cx="90" cy="90" r="7" fill="#ffffff" opacity=".75"/>
+        <ellipse class="bubble bubble--2" cx="120" cy="50" r="5" fill="#ffffff" opacity=".6"/>
+        <ellipse class="bubble bubble--3" cx="430" cy="110" r="8" fill="#ffffff" opacity=".7"/>
+        <ellipse class="bubble bubble--4" cx="460" cy="60" r="4" fill="#ffffff" opacity=".55"/>
+
+        <!-- coral -->
+        <g class="ss-coral">
+          <path d="M 60 330 q -14 -60 6 -104" stroke="#ff7b6b" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <path d="M 54 250 q -26 -12 -30 -34 M 68 262 q 22 -12 18 -36 M 62 224 q -6 -22 6 -30" stroke="#ff7b6b" stroke-width="8" stroke-linecap="round" fill="none"/>
+          <circle cx="24" cy="216" r="7" fill="#ff9e6d"/>
+          <circle cx="86" cy="226" r="7" fill="#ff9e6d"/>
+          <circle cx="68" cy="194" r="7" fill="#ff9e6d"/>
+        </g>
+        <g class="ss-coral ss-coral--2">
+          <path d="M 472 328 q 6 -48 -8 -84" stroke="#b06ae0" stroke-width="9" stroke-linecap="round" fill="none"/>
+          <path d="M 482 268 q 20 -10 18 -30 M 464 278 q -18 -14 -12 -30" stroke="#b06ae0" stroke-width="7" stroke-linecap="round" fill="none"/>
+          <circle cx="502" cy="238" r="6" fill="#d48aff"/>
+          <circle cx="452" cy="248" r="6" fill="#d48aff"/>
+        </g>
+
+        <!-- the sea star -->
+        <g class="ss-star">
+          <!-- 4 full arms -->
+          <ellipse cx="270" cy="120" rx="34" ry="108" fill="url(#ss-arm)"/>
+          <ellipse cx="150" cy="172" rx="108" ry="34" fill="url(#ss-arm)" transform="rotate(-20 150 172)"/>
+          <ellipse cx="390" cy="172" rx="108" ry="34" fill="url(#ss-arm)" transform="rotate(20 390 172)"/>
+          <ellipse cx="188" cy="268" rx="94" ry="30" fill="url(#ss-arm)" transform="rotate(38 188 268)"/>
+          <!-- centre disc -->
+          <circle cx="270" cy="200" r="62" fill="url(#ss-body)"/>
+          <!-- small bumps on body -->
+          <circle cx="250" cy="185" r="4" fill="#e2582e" opacity=".6"/>
+          <circle cx="278" cy="178" r="4" fill="#e2582e" opacity=".6"/>
+          <circle cx="300" cy="210" r="4" fill="#e2582e" opacity=".6"/>
+          <circle cx="244" cy="226" r="4" fill="#e2582e" opacity=".6"/>
+          <circle cx="292" cy="238" r="4" fill="#e2582e" opacity=".6"/>
+          <!-- cute face -->
+          <circle cx="248" cy="188" r="7" fill="#7a2a12"/>
+          <circle cx="292" cy="188" r="7" fill="#7a2a12"/>
+          <circle cx="250" cy="186" r="2.4" fill="#ffffff"/>
+          <circle cx="294" cy="186" r="2.4" fill="#ffffff"/>
+          <path d="M 258 212 q 12 10 24 0" stroke="#7a2a12" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <!-- tube feet on arms -->
+          <circle cx="270" cy="130" r="3" fill="#ffe3b3"/>
+          <circle cx="270" cy="150" r="3" fill="#ffe3b3"/>
+          <circle cx="270" cy="170" r="3" fill="#ffe3b3"/>
+          <circle cx="160" cy="190" r="3" fill="#ffe3b3"/>
+          <circle cx="180" cy="196" r="3" fill="#ffe3b3"/>
+          <circle cx="380" cy="190" r="3" fill="#ffe3b3"/>
+          <circle cx="360" cy="196" r="3" fill="#ffe3b3"/>
+          <circle cx="205" cy="260" r="3" fill="#ffe3b3"/>
+          <circle cx="215" cy="248" r="3" fill="#ffe3b3"/>
+
+          <!-- GROWING 5th arm (bottom-right): growth stages loop -->
+          <g class="ss-stage ss-stage--1">
+            <circle cx="352" cy="274" r="10" fill="#ff9e6d" stroke="#e2582e" stroke-width="3"/>
+          </g>
+          <g class="ss-stage ss-stage--2">
+            <path d="M 352 262 q 26 8 30 32 q -14 22 -36 16" fill="#ffaa7a" stroke="#e2582e" stroke-width="3"/>
+          </g>
+          <g class="ss-stage ss-stage--3">
+            <ellipse cx="360" cy="336" rx="86" ry="30" fill="url(#ss-arm)" transform="rotate(52 360 336)"/>
+          </g>
+          <!-- growing-arm tube feet -->
+          <circle class="ss-newfeet" cx="356" cy="300" r="3" fill="#ffe3b3"/>
+          <circle class="ss-newfeet" cx="340" cy="318" r="3" fill="#ffe3b3"/>
+
+          <!-- eye spots at arm tips -->
+          <circle cx="270" cy="30" r="6" fill="#7a2a12"/>
+          <circle cx="270" cy="30" r="2.4" fill="#fff"/>
+          <circle cx="78" cy="150" r="6" fill="#7a2a12"/>
+          <circle cx="78" cy="150" r="2.4" fill="#fff"/>
+          <circle cx="462" cy="150" r="6" fill="#7a2a12"/>
+          <circle cx="462" cy="150" r="2.4" fill="#fff"/>
+        </g>
+
+        <!-- labels -->
+        <text class="ss-label" x="420" y="70" font-size="15" font-weight="800" fill="#0e7a70">NEW ARM</text>
+        <path class="ss-label" d="M 445 80 l -36 190" stroke="#0e7a70" stroke-width="3" stroke-dasharray="5 6" fill="none"/>
+      </svg>
+    </section>
+
+    <!-- ================= MEET THE SEA STAR ================= -->
+    <section class="section meet-section" id="meet">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#11088; First, meet our hero</p>
+        <h2>Meet the Sea Star</h2>
+        <p class="section-sub">It&rsquo;s not a fish &mdash; it&rsquo;s a star! Here&rsquo;s what makes it amazing before we
+        even talk about regrowing arms.</p>
+      </div>
+
+      <div class="meet-grid">
+        <article class="meet-card" data-reveal>
+          <span class="meet-emoji">&#128032;</span>
+          <h3>Not a Fish!</h3>
+          <p>Sea stars are <strong>echinoderms</strong> &mdash; cousins of sea urchins &amp; sea cucumbers. They have <strong>no
+          brain and no blood</strong>. Instead, they pump sea water through tubes to move!</p>
+        </article>
+        <article class="meet-card" data-reveal>
+          <span class="meet-emoji">&#128207;</span>
+          <h3>Hundreds of Tiny Feet</h3>
+          <p>Each arm has rows of tiny <strong>tube feet</strong>. With water power, these little suckers help the sea star
+          <strong>crawl, grip rocks, and even open clams</strong>!</p>
+        </article>
+        <article class="meet-card" data-reveal>
+          <span class="meet-emoji">&#128065;&#65039;</span>
+          <h3>Eyes on Its Arms</h3>
+          <p>The tip of every arm has a small <strong>eyespot</strong> that senses light &mdash; so a sea star can tell
+          <em>day</em> from <em>night</em> even though it has no head!</p>
+        </article>
+        <article class="meet-card" data-reveal>
+          <span class="meet-emoji">&#128240;</span>
+          <h3>Lots of Cousins</h3>
+          <p>There are about <strong>1,900 sea star species</strong> in oceans all over the world &mdash; in many colours:
+          orange, pink, purple, blue and more!</p>
+        </article>
+      </div>
+      <p class="meet-note" data-reveal>Now the superpower: when a sea star loses an arm (or two!), it can <strong>grow them back
+      completely</strong> &mdash; bones, skin, tube feet and all. Let&rsquo;s see exactly how. &#128640;</p>
+    </section>
+
+    <!-- ================= HOW IT GROWS BACK ================= -->
+    <section class="section how-section" id="how">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#129504; The big trick</p>
+        <h2>How Does a Sea Star Grow an Arm Back?</h2>
+        <p class="section-sub">First the &ldquo;why&rdquo; &mdash; then the step-by-step &ldquo;how&rdquo;!</p>
+      </div>
+
+      <!-- why -->
+      <div class="why-grid" data-reveal>
+        <div class="why-card">
+          <span class="why-emoji">&#129436;&#65039;</span>
+          <h3>Why would it lose an arm?</h3>
+          <p>Predators like birds, crabs and big fish grab arms for dinner. The sea star has a clever escape:
+          it can <strong>let the grabbed arm drop off</strong> (scientists call that <em>autotomy</em>) and hurry away.
+          It&rsquo;s like a superhero leaving a cape behind!</p>
+        </div>
+        <div class="why-card why-card--comet">
+          <span class="why-emoji">&#129680;</span>
+          <h3>The &ldquo;Comet&rdquo; Trick!</h3>
+          <p>If an arm breaks off with <strong>a piece of the middle disc</strong>, that single arm can keep living and
+          grow a <strong>whole brand-new sea star</strong>! Scientists call this shape a <strong>&ldquo;comet&rdquo;</strong>.
+          Some species just split down the middle &mdash; and both halves become new stars!</p>
+        </div>
+      </div>
+
+      <!-- how: steps -->
+      <h3 class="steps-title" data-reveal>The growing-back steps</h3>
+      <ol class="how-steps">
+        <li data-reveal>
+          <span class="step-num">1</span>
+          <p><strong>Seal the wound.</strong> The broken spot quickly closes with new skin &mdash; the sea star doesn&rsquo;t
+          leak. It can even feel its way around with no arm while it heals.</p>
+        </li>
+        <li data-reveal>
+          <span class="step-num">2</span>
+          <p><strong>Rebuild the inside first.</strong> The inner watery space called the <em>coelom</em> &mdash; and the
+          water tubes inside the arm &mdash; grow back. Everything starts from the inside out!</p>
+        </li>
+        <li data-reveal>
+          <span class="step-num">3</span>
+          <p><strong>The tip comes first.</strong> A little bud appears at the end with a special
+          <strong>terminal tube foot</strong> &mdash; the future &ldquo;eye spot&rdquo; and steering wheel of the arm. This
+          tip mixes new tissue AND keeps growing forward, dragging the arm out behind it.</p>
+        </li>
+        <li data-reveal>
+          <span class="step-num">4</span>
+          <p><strong>Cells hit RESET.</strong> Near the wound, adult cells (the kind that were muscle or skin) turn back
+          into simple <strong>&ldquo;builder cells&rdquo;</strong>. They divide and build every layer of the new arm &mdash;
+          bones, muscles, skin and tube feet.</p>
+        </li>
+        <li data-reveal>
+          <span class="step-num">5</span>
+          <p><strong>Patience!</strong> Arms grow back over <strong>weeks or months</strong> (up to about a year). It goes
+          faster in <strong>warm water</strong> and slower in cold water &mdash; like baking: warm ovens rise quicker!</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= IS IT THEIR DNA? ================= -->
+    <section class="section dna-section" id="dna">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#129516; The big question, answered</p>
+        <h2>Is It Their DNA?</h2>
+        <p class="section-sub">Short answer: <strong>YES!</strong> But here&rsquo;s the even cooler part &mdash; it&rsquo;s about
+        <em>which genes turn ON</em>.</p>
+      </div>
+
+      <div class="dna-grid">
+        <article class="dna-card" data-reveal>
+          <span class="dna-emoji">&#128218;</span>
+          <h3>DNA = The Recipe Book</h3>
+          <p>Every living thing has DNA &mdash; a long recipe book full of <strong>genes</strong>. The sea star has the same
+          cellular &ldquo;machines&rdquo; humans have. So the recipe book isn&rsquo;t the only secret;
+          the secret is <strong>which recipes get cooked</strong>.</p>
+        </article>
+        <article class="dna-card dna-card--key" data-reveal>
+          <span class="dna-emoji">&#128236;</span>
+          <h3>Gene EXPRESSION = Cooking Recipes</h3>
+          <p>Scientists talk about <em>gene expression</em>: <strong>which genes are switched ON</strong> in each cell,
+          like which recipes are cooking right now. During regrowth, the sea star&rsquo;s cells
+          <strong>switch on the same building-genes that made it when it was a tiny baby</strong>. The
+          &ldquo;embryo playlist&rdquo; starts playing again!</p>
+        </article>
+        <article class="dna-card" data-reveal>
+          <span class="dna-emoji">&#128200;</span>
+          <h3>Super-Important Gene Families</h3>
+          <p>Researchers keep finding signalling genes that call the shots during arm regrowth:
+          <strong>Wnt</strong>, <strong>BMP</strong>, <strong>FGF</strong>, <strong>retinoic acid (vitamin-A-like signals)</strong>, and the famous
+          <strong>Hox</strong> genes that build body shape. Humans have <em>the same families of genes</em>!</p>
+        </article>
+      </div>
+
+      <div class="dna-toolbox" data-reveal>
+        <h3>&#128295; How do scientists read the recipe activity?</h3>
+        <p>They use a super-powerful tool called <strong>single-cell RNA-seq</strong> (say &ldquo;seq&rdquo; = &ldquo;seck&rdquo;).
+        It lets them zoom into <strong>one single cell at a time</strong> and print out which genes that cell is using.
+        In 2022&ndash;2023, scientists made complete <strong>&ldquo;cell maps&rdquo; of sea stars</strong> &mdash; showing all the
+        different cells and the genes each one switches on as a star grows and regrows.</p>
+        <p class="dna-quote">&ldquo;A sea star's regrowing arm RE-uses the embryo's building plan.&rdquo; &#128331;</p>
+      </div>
+    </section>
+
+    <!-- ================= FOR HUMAN HEALING ================= -->
+    <section class="section humans-section" id="humans">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">&#128138; Why we care</p>
+        <h2>What Does This Mean for Healing People?</h2>
+        <p class="section-sub">We can&rsquo;t regrow whole arms &mdash; yet. But sea stars are teaching us how it might be done!</p>
+      </div>
+
+      <div class="humans-grid">
+        <article class="humans-card" data-reveal>
+          <span class="humans-emoji">&#129482;&#65039;</span>
+          <h3>Why humans scar instead</h3>
+          <p>When people get a deep wound, our bodies usually make <strong>quick scar tissue</strong> to patch it &mdash; like
+          fast glue. Sea stars do the opposite: they <strong>re-open their building plan and grow the real thing</strong>.
+          Comparing the two tells scientists exactly where we &ldquo;stop&rdquo;.</p>
+        </article>
+        <article class="humans-card" data-reveal>
+          <span class="humans-emoji">&#129504;</span>
+          <h3>The research dream</h3>
+          <p>Scientists hope that by learning the sea star&rsquo;s gene switches, we can one day help people
+          <strong>regrow fingertips, repair damaged organs, or heal spinal-cord injuries</strong> &mdash; by nudging our
+          own cells to follow the same &ldquo;grow it back&rdquo; instructions. Wikipedia&rsquo;s research section even notes
+          that understanding starfish regrowth &ldquo;may have implications for human medicine&rdquo;!</p>
+        </article>
+        <article class="humans-card" data-reveal>
+          <span class="humans-emoji">&#129297;</span>
+          <h3>We already regrow a little!</h3>
+          <p>Fun fact: we&rsquo;re not at zero &mdash; humans can regrow <strong>a bit of liver, skin, and the very tips
+          of fingertips</strong>. Sea stars show what full &ldquo;limb regrowth&rdquo; could one day look like.</p>
+        </article>
+      </div>
+
+      <p class="humans-note" data-reveal>So the sea star&rsquo;s DNA isn&rsquo;t full of brand-new mystery genes &mdash;
+      it&rsquo;s mostly the <strong>same kinds of genes we have</strong>. The magic is in <strong>which switches it flips,
+      and when</strong>. Read the switches right, and maybe one day arms could grow back for us too! &#127775;</p>
+    </section>
+
+    <!-- ================= MINI QUIZ ================= -->
+    <section class="section quiz-section" id="quiz" data-reveal>
+      <div class="section-head">
+        <p class="eyebrow">Are you ready, explorer?</p>
+        <h2>&#129504; The Sea Star Mini Quiz</h2>
+        <p class="section-sub">6 questions about growing arms back &mdash; and the DNA dish that makes it possible!</p>
+      </div>
+      <div class="quiz-shell" id="quizBox" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p>Sea Star <em>Reef Lab</em> &middot; part of <a href="index.html"><strong>Animal Discovery HQ</strong></a> &#128153;</p>
+    <p class="foot-note">Made for curious kids aged 8&ndash;9. Facts checked against peer-reviewed science and Wikipedia research sections. Keep asking questions!</p>
+  </footer>
+
+  <script src="seastar.js"></script>
+</body>
+</html>
