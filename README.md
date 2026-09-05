@@ -31,6 +31,12 @@ with animated illustrations and an interactive quiz at the end.
 | `seastar-regeneration.html` | Sub-page: Sea star regeneration (see below)                    |
 | `seastar.css`      | Coral-reef theme + how-it-grows steps / DNA section styles           |
 | `seastar.js`       | Sub-page interactions: scroll reveal + 6-question mini quiz          |
+| `hydra.html`       | Sub-page: Hydra immortality science (see below)                       |
+| `hydra.css`        | Green pond / microscope-lab theme + lab / mystery / future styles     |
+| `hydra.js`         | Sub-page interactions: scroll reveal + 6-question mini quiz           |
+| `electric-eel.html` | Sub-page: Electric Eel bioelectricity (see below)                    |
+| `electric-eel.css` | Electric-blue / lightning theme + power / lab / future styles         |
+| `electric-eel.js`  | Sub-page interactions: scroll reveal + 6-question mini quiz           |
 
 ## Sub-page: `seastar-regeneration.html` 🌊
 From the Deep-Dive grid on the main page → “Sea Star Regeneration → Dive in!”, or open the file directly.
@@ -45,6 +51,37 @@ researchers learning for human limb regrowth?**
   embryo/baby building genes; key families: Wnt, BMP, FGF, retinoic acid, Hox. Tool: single-cell RNA-seq; 2022–23 sea-star “cell maps”.
 - **For Human Healing** — why humans scar instead of regrow, the research dream (fingertips, organs, spinal-cord healing),
   human stem-cell limits (Wikipedia notes human-medicine implications), people already regrow a little (liver/skin/fingertip tips).
+- **Mini Quiz** — 6 questions with explanations, stars and confetti.
+
+## Sub-page: `hydra.html` 🧫
+From the Deep-Dive grid on the main page → “Hydra: The Immortal → Zoom in!”, or open the file directly.
+
+It answers: **why doesn’t the tiny freshwater hydra age, what are the three lab missions studying it, and what
+could that mean for humans?**
+- **Meet the Hydra** — ~10 mm freshwater pond animal, a cnidarian (cousin of jellyfish/corals), stinging-tentacle
+  snack catcher (nematocysts), budding + regrow champion; heavily studied at the Max Planck Institute & Caltech.
+- **The Big Mystery** — shows *negligible senescence* (almost no getting-old from time) = “biological immortality”;
+  it lacks the usual aging markers and rebuilds its own cells over and over. (Immortal ≠ can’t die: predators/
+  accidents can still end it.)
+- **The Three Lab Missions** — 1. Telomerase keeps chromosome caps (telomeres) long so the cell countdown never
+  runs out; 2. Stem-cell renewal keeps the whole body fresh; 3. Protein degradation recycles damaged proteins.
+- **For People** — potential **anti-aging therapies**: protect our telomere caps, renew our tissues/organs, and
+  clean up damaged proteins to keep human cells healthy longer.
+- **Mini Quiz** — 6 questions with explanations, stars and confetti.
+
+## Sub-page: `electric-eel.html` ⚡
+From the Deep-Dive grid on the main page → “Electric Eel → Get shocked!”, or open the file directly.
+
+It answers: **how does the electric eel make up to ~600 volts with its own bioelectric organs, and how are Yale University
+and CUNY turning that into bio-batteries and nerve therapies for people?**
+- **Meet the Electric Eel** — not a true eel but a *knifefish* (cousin of catfish), 2 m+, breathes air, uses an electric
+  field like radar to sense muddy water.
+- **The Power** — special *electrocytes* (electric cells) stack like tiny batteries inside big **bioelectric organs**;
+  all firing together release a shock of about **600 volts** (plus a weak sensing field).
+- **The Lab Missions** (Yale University & CUNY) — **1. Gene sequencing completed**: decoded the genome to find the genes
+  that build the electric organs · **2. Bioelectricity research ongoing**: mapping how electrocytes charge and fire ·
+  **3. Build for people**: bio-batteries and electrical nerve-stimulation therapies.
+- **For People** — potential **bio-batteries**, **electrical nerve-stimulation therapies**, and water/dark “radar” sensor designs.
 - **Mini Quiz** — 6 questions with explanations, stars and confetti.
 
 ## Sub-page: `naked-mole-rat.html` 🐀

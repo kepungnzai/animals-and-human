@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Animal Discovery HQ — Amazing Animal News for Curious Kids (Ages 8–9)</title>
-  <meta name="description" content="Kid-friendly animal news: meet a brand-new snake species, a deep-sea cutie, a healing axolotl and a tiny dancer, then take the big quiz!">
+  <meta name="description" content="Kid-friendly animal news: meet a brand-new snake species, a deep-sea cutie, a healing axolotl, an ageless pond critter and a zappy bio-battery, then take the big quiz!">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
       <p class="hero-sub">
         Scientists find brand-new things about animals all the time! 👇
         Say hello to a <strong>whole new snake species</strong>, a cute deep-sea puzzler,
-        a little healer, and a rainbow dancer. Then prove your brain with the <strong>Big Quiz</strong>!
+        a little healer, an ageless pond critter, and a zappy bio-battery. Then prove your brain with the <strong>Big Quiz</strong>!
       </p>
       <div class="hero-actions">
         <a href="#featured" class="btn btn--warm">🚨 Meet the Featured Animal</a>
@@ -278,57 +278,345 @@
           </div>
         </article>
 
-        <!-- Peacock spider card -->
+        <!-- Snake venom → antivenom card -->
         <article class="animal-card" data-reveal>
           <div class="animal-card-inner">
             <div class="card-face card-front">
-              <span class="card-tag">&#128240; New species still found each year</span>
+              <span class="card-tag">&#128240; New synthetic antivenom &middot; 2024</span>
               <div class="card-art">
-                <svg viewBox="0 0 420 320" role="img" aria-label="A tiny peacock spider dancing with a rainbow fan">
+                <svg viewBox="0 0 420 320" role="img" aria-label="A friendly green snake with golden venom drops falling into a flask, next to an antivenom bottle">
                   <defs>
-                    <linearGradient id="peacock-bg" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0" stop-color="#e8f6ff"/>
-                      <stop offset="1" stop-color="#fdf4ff"/>
+                    <linearGradient id="sn-card-bg" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#d7f5d0"/>
+                      <stop offset="1" stop-color="#fdf3d9"/>
+                    </linearGradient>
+                    <linearGradient id="sn-card-body" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#8fa94f"/>
+                      <stop offset="1" stop-color="#5c7430"/>
+                    </linearGradient>
+                    <linearGradient id="sn-card-venom" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#ffd94d"/>
+                      <stop offset="1" stop-color="#e8a20c"/>
                     </linearGradient>
                   </defs>
-                  <rect width="420" height="320" fill="url(#peacock-bg)"/>
-                  <text class="note-float" x="120" y="80" font-size="26">&#127925;</text>
-                  <text class="note-float note-float--2" x="290" y="70" font-size="22">&#127925;</text>
-                  <text class="note-float note-float--3" x="330" y="140" font-size="18">&#127925;</text>
-                  <ellipse cx="210" cy="300" rx="90" ry="12" fill="#1e3c5a" opacity=".15"/>
-                  <g class="peacock-dance">
-                    <path d="M 92 150 A 118 118 0 0 1 328 150 Z" fill="#e6b8ff" opacity=".5"/>
-                    <g transform="rotate(-72 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#9b5de5"/></g>
-                    <g transform="rotate(-48 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#2c9df0"/></g>
-                    <g transform="rotate(-24 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#35c58b"/></g>
-                    <g transform="rotate(0 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#ffd93b"/></g>
-                    <g transform="rotate(24 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#ff8b3e"/></g>
-                    <g transform="rotate(48 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#ff5eae"/></g>
-                    <g transform="rotate(72 210 250)"><ellipse cx="210" cy="156" rx="20" ry="96" fill="#ff3b6b"/></g>
-                    <path d="M 200 238 C 176 218 168 190 178 168" stroke="#4b2e2a" stroke-width="6" stroke-linecap="round" fill="none"/>
-                    <path d="M 220 238 C 244 218 252 190 242 168" stroke="#4b2e2a" stroke-width="6" stroke-linecap="round" fill="none"/>
-                    <path d="M 198 252 C 182 262 172 274 174 284" stroke="#4b2e2a" stroke-width="5" stroke-linecap="round" fill="none"/>
-                    <path d="M 222 252 C 238 262 248 274 246 284" stroke="#4b2e2a" stroke-width="5" stroke-linecap="round" fill="none"/>
-                    <ellipse cx="210" cy="250" rx="16" ry="19" fill="#4b2e2a"/>
-                    <ellipse cx="210" cy="232" rx="12" ry="10" fill="#155e9c"/>
-                    <circle cx="203" cy="230" r="3.4" fill="#ffffff"/>
-                    <circle cx="210" cy="226" r="3.4" fill="#ffffff"/>
-                    <circle cx="217" cy="230" r="3.4" fill="#ffffff"/>
-                    <circle cx="206" cy="234" r="1.6" fill="#1c1c1c"/>
-                    <circle cx="214" cy="234" r="1.6" fill="#1c1c1c"/>
-                  </g>
+                  <rect width="420" height="320" fill="url(#sn-card-bg)"/>
+                  <circle cx="382" cy="54" r="26" fill="#ffd94d" opacity=".9"/>
+                  <circle cx="382" cy="54" r="36" fill="none" stroke="#ffd94d" stroke-width="3" opacity=".35"/>
+                  <path d="M 0 292 Q 120 276 250 290 Q 360 302 420 288 L 420 320 L 0 320 Z" fill="#e7c684"/>
+                  <path d="M 54 288 Q 66 268 76 288 M 330 284 Q 340 266 350 284" stroke="#5c7430" stroke-width="4" stroke-linecap="round" fill="none"/>
+                  <path class="sn-card-sway" d="M 40 92 C 118 58 240 56 318 98 C 356 124 382 162 394 194" stroke="url(#sn-card-body)" stroke-width="24" stroke-linecap="round" fill="none"/>
+                  <circle cx="40" cy="92" r="15" fill="url(#sn-card-body)"/>
+                  <circle cx="40" cy="92" r="3.5" fill="#465a26" opacity=".55"/>
+                  <circle cx="130" cy="84" r="3.5" fill="#465a26" opacity=".55"/>
+                  <circle cx="222" cy="82" r="3.5" fill="#465a26" opacity=".55"/>
+                  <circle cx="308" cy="102" r="3.5" fill="#465a26" opacity=".55"/>
+                  <circle cx="356" cy="142" r="3.5" fill="#465a26" opacity=".55"/>
+                  <circle cx="394" cy="196" r="17" fill="url(#sn-card-body)"/>
+                  <circle cx="401" cy="188" r="4.5" fill="#2a1a4a"/>
+                  <circle cx="403" cy="186.5" r="1.6" fill="#ffffff"/>
+                  <path d="M 406 206 l 12 5 M 418 211 l 7 -7 M 418 211 l 4 10" stroke="#c23b3b" stroke-width="3" stroke-linecap="round" fill="none"/>
+                  <path d="M 330 288 l -12 -34 h 24 Z" fill="#cfe9f5" stroke="#5a7a92" stroke-width="3" stroke-linejoin="round"/>
+                  <path d="M 318 254 h 26 M 330 226 l 5 28" stroke="#5a7a92" stroke-width="3" fill="none"/>
+                  <path d="M 314 206 h 22 l 4 20 h -30 Z" fill="#cfe9f5" stroke="#5a7a92" stroke-width="3" fill="none"/>
+                  <ellipse cx="336" cy="285" rx="10" ry="4" fill="#ffd94d"/>
+                  <circle class="sn-card-drop" cx="334" cy="254" r="4" fill="url(#sn-card-venom)"/>
+                  <circle class="sn-card-drop sn-card-drop--2" cx="343" cy="268" r="3.2" fill="url(#sn-card-venom)"/>
+                  <circle class="sn-card-drop sn-card-drop--3" cx="329" cy="274" r="3.6" fill="url(#sn-card-venom)"/>
+                  <rect x="366" y="252" width="50" height="36" rx="5" fill="#ffffff" stroke="#b06a3b" stroke-width="3"/>
+                  <rect x="379" y="238" width="24" height="14" rx="4" fill="#b06a3b"/>
+                  <text x="391" y="276" text-anchor="middle" font-size="11" font-weight="800" fill="#a14b3e">ANTIVENOM</text>
+                  <text class="sn-card-spark" x="248" y="160" font-size="18">&#10024;</text>
+                  <text class="sn-card-spark" x="176" y="118" font-size="14">&#10024;</text>
                 </svg>
               </div>
-              <h3>Peacock Spider &#128375;</h3>
-              <p class="card-tagline">A tiny dancer that flashes a rainbow fan &mdash; smaller than a grain of rice!</p>
+              <h3>Snake Venom &rarr; Medicine &#128013;</h3>
+              <p class="card-tagline">Its bite can hurt &mdash; but humans turn the venom into life-saving medicine!</p>
               <p class="card-hint">Tap to flip</p>
             </div>
             <div class="card-face card-back">
-              <span class="tap-emoji">&#128375;</span>
+              <span class="tap-emoji">&#128013;</span>
               <h4>Surprise!</h4>
-              <p>Only the <em>males</em> are rainbow-coloured &mdash; they <strong>dance and raise their colourful flaps</strong>
-              to impress females! They are only about <strong>4&ndash;5 mm long</strong>, and more than
-              <strong>100 species</strong> are known. Scientists keep finding <strong>new dancing spiders</strong> in Australia every year.</p>
+              <p>Venom is a mix of tiny &ldquo;keys&rdquo; &mdash; and each <strong>antivenom</strong> has to fit the right key to the right lock. In <strong>2024, scientists made a brand-new synthetic antivenom</strong> that could one day fight many snake bites at once!</p>
+              <p class="dive-link-row"><a class="dive-link" href="snake-antivenom.html">&#128138; Visit the lab: how does venom become antivenom?</a></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Naked mole-rat card -->
+        <article class="animal-card" data-reveal>
+          <div class="animal-card-inner">
+            <div class="card-face card-front">
+              <span class="card-tag">&#128240; Animal super-science</span>
+              <div class="card-art">
+                <svg viewBox="0 0 420 320" role="img" aria-label="A pink naked mole-rat with big front teeth peeking out of an underground tunnel">
+                  <defs>
+                    <linearGradient id="mr-card-sky" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#9fdcff"/>
+                      <stop offset="1" stop-color="#dff3ff"/>
+                    </linearGradient>
+                    <linearGradient id="mr-card-dirt" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#b98a4a"/>
+                      <stop offset=".5" stop-color="#96662f"/>
+                      <stop offset="1" stop-color="#6e4518"/>
+                    </linearGradient>
+                    <radialGradient id="mr-card-skin" cx=".5" cy=".4" r=".7">
+                      <stop offset="0" stop-color="#ffc1cf"/>
+                      <stop offset="1" stop-color="#f08ba4"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="420" height="108" fill="url(#mr-card-sky)"/>
+                  <circle cx="60" cy="42" r="20" fill="#ffd94d"/>
+                  <path d="M 0 108 Q 140 94 260 108 Q 360 120 420 106 L 420 114 L 0 114 Z" fill="#6fbf4a"/>
+                  <rect y="108" width="420" height="212" fill="url(#mr-card-dirt)"/>
+                  <ellipse cx="78" cy="142" rx="8" ry="5" fill="#5e3a14" opacity=".5"/>
+                  <ellipse cx="356" cy="168" rx="7" ry="4" fill="#5e3a14" opacity=".5"/>
+                  <ellipse cx="282" cy="290" rx="9" ry="5" fill="#5e3a14" opacity=".4"/>
+                  <path d="M 96 108 Q 92 156 102 194 Q 112 226 104 258" stroke="#7a4a22" stroke-width="6" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="210" cy="252" rx="182" ry="86" fill="#3a2208"/>
+                  <ellipse cx="210" cy="252" rx="172" ry="77" fill="#4a2e10"/>
+                  <g class="mr-card-rat">
+                    <path d="M 176 268 q -16 6 -14 18" stroke="url(#mr-card-skin)" stroke-width="8" stroke-linecap="round" fill="none"/>
+                    <ellipse cx="206" cy="248" rx="34" ry="26" fill="url(#mr-card-skin)"/>
+                    <ellipse cx="206" cy="257" rx="20" ry="13" fill="#ffd6e0" opacity=".8"/>
+                    <circle cx="236" cy="224" r="21" fill="url(#mr-card-skin)"/>
+                    <circle cx="221" cy="206" r="5" fill="#e57a97"/>
+                    <circle cx="245" cy="220" r="2.2" fill="#3a1a22"/>
+                    <rect x="251" y="232" width="4.5" height="9" rx="1" fill="#ffffff"/>
+                    <rect x="257" y="232" width="4.5" height="9" rx="1" fill="#ffffff"/>
+                    <path d="M 248 229 q 12 0 20 5 M 248 233 q 14 2 19 8" stroke="#e57a97" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M 214 270 q 5 7 2 12" stroke="#f08ba4" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    <path d="M 190 276 q -5 8 -2 13" stroke="#f08ba4" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    <path d="M 190 238 q 5 4 10 0 M 183 247 q 7 3 14 0" stroke="#e57a97" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".7"/>
+                  </g>
+                  <path class="mr-card-blink" d="M 316 210 l 0 -9 M 316 210 l 0 9 M 316 210 l -7 0 M 316 210 l 7 0" stroke="#ffe066" stroke-width="3" stroke-linecap="round" fill="none"/>
+                  <text x="70" y="84" font-size="12" font-weight="800" fill="#2f7fc9">18 min no O&#8322;!</text>
+                  <circle cx="292" cy="284" r="9" fill="#e57a97" opacity=".5"/>
+                  <text x="292" y="288" text-anchor="middle" font-size="11" font-weight="800" fill="#ffd9a8">BURROW!</text>
+                </svg>
+              </div>
+              <h3>Naked Mole-Rat &#128053;</h3>
+              <p class="card-tagline">Pink, wrinkly and nearly hairless &mdash; but it&rsquo;s packed with superpowers!</p>
+              <p class="card-hint">Tap to flip</p>
+            </div>
+            <div class="card-face card-back">
+              <span class="tap-emoji">&#128053;</span>
+              <h4>Surprise!</h4>
+              <p>It <strong>almost never gets cancer</strong>, can survive with almost no oxygen, and lives longer than any other rodent! In <strong>2023, scientists even lent its cancer-fighting gene to mice</strong> &mdash; and it made them healthier!</p>
+              <p class="dive-link-row"><a class="dive-link" href="naked-mole-rat.html">&#128295; Dig in: what can we build from its superpowers?</a></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sea star regeneration card -->
+        <article class="animal-card" data-reveal>
+          <div class="animal-card-inner">
+            <div class="card-face card-front">
+              <span class="card-tag">&#128240; Regeneration science</span>
+              <div class="card-art">
+                <svg viewBox="0 0 420 320" role="img" aria-label="A cute orange sea star on the sandy sea floor with one arm growing back">
+                  <defs>
+                    <linearGradient id="ss-card-sea" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#7ee8e0"/>
+                      <stop offset="1" stop-color="#bff7f0"/>
+                    </linearGradient>
+                    <linearGradient id="ss-card-sand" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#fde2b3"/>
+                      <stop offset="1" stop-color="#f3c988"/>
+                    </linearGradient>
+                    <radialGradient id="ss-card-body" cx=".5" cy=".45" r=".7">
+                      <stop offset="0" stop-color="#ff9e6d"/>
+                      <stop offset="1" stop-color="#f0643a"/>
+                    </radialGradient>
+                    <radialGradient id="ss-card-arm" cx=".5" cy=".5" r=".7">
+                      <stop offset="0" stop-color="#ffaa7a"/>
+                      <stop offset="1" stop-color="#e2582e"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="420" height="320" fill="url(#ss-card-sea)"/>
+                  <path d="M 0 292 Q 120 276 250 290 Q 360 304 420 288 L 420 320 L 0 320 Z" fill="url(#ss-card-sand)"/>
+                  <ellipse class="bubble bubble--1" cx="84" cy="70" r="6" fill="#ffffff" opacity=".75"/>
+                  <ellipse class="bubble bubble--2" cx="110" cy="40" r="4" fill="#ffffff" opacity=".6"/>
+                  <ellipse class="bubble bubble--3" cx="344" cy="82" r="6" fill="#ffffff" opacity=".7"/>
+                  <g class="ss-card-coral">
+                    <path d="M 48 292 q -10 -46 4 -80" stroke="#ff7b6b" stroke-width="9" stroke-linecap="round" fill="none"/>
+                    <path d="M 44 226 q -20 -10 -22 -28 M 56 238 q 16 -10 12 -28" stroke="#ff7b6b" stroke-width="7" stroke-linecap="round" fill="none"/>
+                    <circle cx="22" cy="198" r="6" fill="#ff9e6d"/>
+                    <circle cx="68" cy="210" r="6" fill="#ff9e6d"/>
+                  </g>
+                  <g class="ss-card-coral ss-card-coral--2">
+                    <path d="M 378 290 q 4 -34 -6 -60" stroke="#b06ae0" stroke-width="8" stroke-linecap="round" fill="none"/>
+                    <path d="M 384 242 q 16 -8 14 -24" stroke="#b06ae0" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    <circle cx="398" cy="218" r="5" fill="#d48aff"/>
+                  </g>
+                  <g class="ss-card-star">
+                    <ellipse cx="210" cy="110" rx="30" ry="92" fill="url(#ss-card-arm)"/>
+                    <ellipse cx="104" cy="166" rx="92" ry="29" fill="url(#ss-card-arm)" transform="rotate(-22 104 166)"/>
+                    <ellipse cx="316" cy="166" rx="92" ry="29" fill="url(#ss-card-arm)" transform="rotate(22 316 166)"/>
+                    <ellipse cx="150" cy="238" rx="80" ry="26" fill="url(#ss-card-arm)" transform="rotate(38 150 238)"/>
+                    <circle cx="210" cy="190" r="54" fill="url(#ss-card-body)"/>
+                    <circle cx="192" cy="176" r="3.5" fill="#e2582e" opacity=".6"/>
+                    <circle cx="216" cy="170" r="3.5" fill="#e2582e" opacity=".6"/>
+                    <circle cx="234" cy="198" r="3.5" fill="#e2582e" opacity=".6"/>
+                    <circle cx="188" cy="212" r="3.5" fill="#e2582e" opacity=".6"/>
+                    <circle cx="228" cy="224" r="3.5" fill="#e2582e" opacity=".6"/>
+                    <circle cx="190" cy="178" r="6" fill="#7a2a12"/>
+                    <circle cx="230" cy="178" r="6" fill="#7a2a12"/>
+                    <circle cx="192" cy="176" r="2.2" fill="#ffffff"/>
+                    <circle cx="232" cy="176" r="2.2" fill="#ffffff"/>
+                    <path d="M 200 200 q 10 8 20 0" stroke="#7a2a12" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+                    <circle cx="210" cy="124" r="2.6" fill="#ffe3b3"/>
+                    <circle cx="210" cy="144" r="2.6" fill="#ffe3b3"/>
+                    <circle cx="210" cy="164" r="2.6" fill="#ffe3b3"/>
+                    <circle cx="122" cy="178" r="2.6" fill="#ffe3b3"/>
+                    <circle cx="298" cy="178" r="2.6" fill="#ffe3b3"/>
+                    <circle class="ss-card-stage" cx="270" cy="248" r="9" fill="#ff9e6d" stroke="#e2582e" stroke-width="3"/>
+                    <path class="ss-card-stage ss-card-stage--2" d="M 270 238 q 22 6 26 26 q -12 18 -30 12" fill="#ffaa7a" stroke="#e2582e" stroke-width="3"/>
+                  </g>
+                  <text x="330" y="58" font-size="13" font-weight="800" fill="#0e7a70">NEW ARM</text>
+                  <path d="M 344 68 l -42 166" stroke="#0e7a70" stroke-width="2.6" stroke-dasharray="5 6" fill="none"/>
+                </svg>
+              </div>
+              <h3>Sea Star Regeneration &#127754;</h3>
+              <p class="card-tagline">Lose an arm? No problem &mdash; a sea star can grow a whole new one!</p>
+              <p class="card-hint">Tap to flip</p>
+            </div>
+            <div class="card-face card-back">
+              <span class="tap-emoji">&#127754;</span>
+              <h4>Surprise!</h4>
+              <p>While an arm regrows, scientists can read each cell&rsquo;s genes &mdash; the <strong>DNA &ldquo;recipe&rdquo; switches arm-building on in the right order!</strong> Some sea stars can even grow a whole new body from one single arm.</p>
+              <p class="dive-link-row"><a class="dive-link" href="seastar-regeneration.html">&#129516; Dive in: is it their DNA?</a></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hydra card -->
+        <article class="animal-card" data-reveal>
+          <div class="animal-card-inner">
+            <div class="card-face card-front">
+              <span class="card-tag">&#128240; Immortality science</span>
+              <div class="card-art">
+                <svg viewBox="0 0 420 320" role="img" aria-label="A cute green hydra floating in a clear pond with wavy tentacles, sparkles and an ageless label">
+                  <defs>
+                    <linearGradient id="hy-card-pond" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#8fe3b7"/>
+                      <stop offset="1" stop-color="#c9f0d8"/>
+                    </linearGradient>
+                    <radialGradient id="hy-card-body" cx=".5" cy=".38" r=".75">
+                      <stop offset="0" stop-color="#7fd68e"/>
+                      <stop offset="1" stop-color="#3cae6f"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="420" height="320" fill="url(#hy-card-pond)"/>
+                  <ellipse class="bubble bubble--1" cx="84" cy="62" r="6" fill="#ffffff" opacity=".8"/>
+                  <ellipse class="bubble bubble--2" cx="112" cy="36" r="4" fill="#ffffff" opacity=".6"/>
+                  <ellipse class="bubble bubble--3" cx="350" cy="74" r="6" fill="#ffffff" opacity=".7"/>
+                  <path d="M 36 316 C 46 290 38 264 50 238" stroke="#2f8f5a" stroke-width="7" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="50" cy="234" rx="9" ry="15" fill="#3cae6f" transform="rotate(-12 50 234)"/>
+                  <path d="M 390 316 C 400 290 392 264 404 238" stroke="#2f8f5a" stroke-width="7" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="404" cy="234" rx="9" ry="15" fill="#3cae6f" transform="rotate(12 404 234)"/>
+                  <g class="hy-card-float">
+                    <path d="M 206 128 C 182 82 156 60 126 48" stroke="#43b276" stroke-width="7" stroke-linecap="round" fill="none"/>
+                    <circle cx="126" cy="48" r="8" fill="#2f8f5a"/>
+                    <circle cx="166" cy="72" r="2.4" fill="#2f8f5a"/>
+                    <path d="M 214 120 C 198 64 190 28 186 8" stroke="#43b276" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    <circle cx="185" cy="6" r="7" fill="#2f8f5a"/>
+                    <path d="M 230 120 C 246 64 258 28 270 8" stroke="#43b276" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    <circle cx="272" cy="6" r="7" fill="#2f8f5a"/>
+                    <path d="M 238 128 C 264 82 290 60 322 48" stroke="#43b276" stroke-width="7" stroke-linecap="round" fill="none"/>
+                    <circle cx="324" cy="46" r="8" fill="#2f8f5a"/>
+                    <circle cx="282" cy="72" r="2.4" fill="#2f8f5a"/>
+                    <path d="M 202 134 C 178 114 160 102 148 112" stroke="#43b276" stroke-width="5" stroke-linecap="round" fill="none"/>
+                    <circle cx="146" cy="111" r="6" fill="#2f8f5a"/>
+                    <path d="M 242 134 C 266 114 284 102 296 112" stroke="#43b276" stroke-width="5" stroke-linecap="round" fill="none"/>
+                    <circle cx="298" cy="111" r="6" fill="#2f8f5a"/>
+                    <path d="M 196 144 C 188 206 190 260 196 308 L 248 308 C 256 260 254 206 248 144 Z" fill="url(#hy-card-body)" stroke="#2f8f5a" stroke-width="4"/>
+                    <ellipse cx="222" cy="318" rx="40" ry="11" fill="#2f8f5a"/>
+                    <ellipse cx="222" cy="134" rx="14" ry="8" fill="#2f8f5a"/>
+                    <circle cx="208" cy="174" r="5.5" fill="#123f2a"/>
+                    <circle cx="236" cy="174" r="5.5" fill="#123f2a"/>
+                    <circle cx="210" cy="172" r="1.8" fill="#ffffff"/>
+                    <circle cx="238" cy="172" r="1.8" fill="#ffffff"/>
+                    <path d="M 216 190 q 6 6 12 0" stroke="#123f2a" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <circle cx="200" cy="192" r="4" fill="#ff8ac2" opacity=".7"/>
+                    <circle cx="244" cy="192" r="4" fill="#ff8ac2" opacity=".7"/>
+                  </g>
+                  <path class="hy-card-spark" d="M 318 158 l 0 -8 M 318 158 l 0 8 M 318 158 l -7 0 M 318 158 l 7 0" stroke="#ffe066" stroke-width="3" stroke-linecap="round" fill="none"/>
+                  <path class="hy-card-spark hy-card-spark--2" d="M 128 176 l 0 -7 M 128 176 l 0 7 M 128 176 l -6 0 M 128 176 l 6 0" stroke="#ffe066" stroke-width="3" stroke-linecap="round" fill="none"/>
+                  <text x="300" y="82" font-size="15" font-weight="800" fill="#0f7a5a">AGELESS!</text>
+                  <circle cx="356" cy="122" r="16" fill="#ffffff" stroke="#17b897" stroke-width="3"/>
+                  <text x="356" y="128" font-size="19" font-weight="800" fill="#17b897" text-anchor="middle">&#8734;</text>
+                  <path d="M 316 92 l -60 116" stroke="#0f7a5a" stroke-width="3" stroke-dasharray="5 6" fill="none"/>
+                </svg>
+              </div>
+              <h3>Hydra: The Immortal &#129515;</h3>
+              <p class="card-tagline">A tiny freshwater creature that shows no signs of getting old!</p>
+              <p class="card-hint">Tap to flip</p>
+            </div>
+            <div class="card-face card-back">
+              <span class="tap-emoji">&#129515;</span>
+              <h4>Surprise!</h4>
+              <p>A hydra keeps <strong>stem cells</strong> that renew its body again and again &mdash; so it never builds up the usual signs of aging. Scientists call that <strong>biological immortality</strong>!</p>
+              <p class="dive-link-row"><a class="dive-link" href="hydra.html">&#129514; Zoom in: the 3 lab missions</a></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Electric eel card -->
+        <article class="animal-card" data-reveal>
+          <div class="animal-card-inner">
+            <div class="card-face card-front">
+              <span class="card-tag">&#128240; Bioelectricity science</span>
+              <div class="card-art">
+                <svg viewBox="0 0 420 320" role="img" aria-label="A long electric eel gliding through dark water, with a glowing tail and lightning bolts">
+                  <defs>
+                    <linearGradient id="eel-card-water" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#0e2a55"/>
+                      <stop offset="1" stop-color="#1c4a80"/>
+                    </linearGradient>
+                    <radialGradient id="eel-card-body" cx=".5" cy=".5" r=".7">
+                      <stop offset="0" stop-color="#3a5b8c"/>
+                      <stop offset="1" stop-color="#141c2e"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="420" height="320" fill="url(#eel-card-water)"/>
+                  <ellipse class="bubble bubble--1" cx="82" cy="58" r="6" fill="#bfe3ff" opacity=".75"/>
+                  <ellipse class="bubble bubble--2" cx="112" cy="34" r="4" fill="#bfe3ff" opacity=".55"/>
+                  <ellipse class="bubble bubble--3" cx="358" cy="92" r="6" fill="#bfe3ff" opacity=".7"/>
+                  <path d="M 40 316 C 30 288 38 262 26 232" stroke="#1c5a3a" stroke-width="7" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="26" cy="228" rx="10" ry="16" fill="#2a7a4a" transform="rotate(-12 26 228)"/>
+                  <path d="M 384 314 C 396 286 386 262 400 234" stroke="#1c5a3a" stroke-width="7" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="401" cy="230" rx="10" ry="16" fill="#2a7a4a" transform="rotate(12 401 230)"/>
+                  <g class="eel-card-swim">
+                    <path d="M 60 168 C 154 192 254 174 302 156 L 314 152 L 302 176 C 254 192 154 174 60 194 Z" fill="url(#eel-card-body)" stroke="#0c1526" stroke-width="3"/>
+                    <path d="M 60 186 C 134 200 214 186 286 162" stroke="#f0c674" stroke-width="7" stroke-linecap="round" fill="none" opacity=".85"/>
+                    <path d="M 102 156 C 174 132 254 130 298 136" stroke="#2a3a5a" stroke-width="5" stroke-linecap="round" fill="none"/>
+                    <path d="M 126 178 C 176 194 256 184 296 164" stroke="#e8c26a" stroke-width="6" stroke-linecap="round" fill="none" opacity=".9"/>
+                    <path class="eel-card-zap" d="M 304 156 l 6 -4 M 304 156 l 6 4 M 304 154 l 14 2" stroke="#ffe066" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <path class="eel-card-zap eel-card-zap--2" d="M 270 168 l 6 -3 M 270 164 l 14 6" stroke="#ffd93b" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <path class="eel-card-zap eel-card-zap--3" d="M 272 184 l 8 6 M 272 178 l 16 10" stroke="#ffd93b" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <circle cx="60" cy="178" r="5.5" fill="#0c1526"/>
+                    <circle cx="84" cy="178" r="5.5" fill="#0c1526"/>
+                    <circle cx="62" cy="176" r="1.8" fill="#ffffff"/>
+                    <circle cx="86" cy="176" r="1.8" fill="#ffffff"/>
+                    <path d="M 70 194 q 6 6 12 0" stroke="#0c1526" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <path d="M 104 182 q 5 -2 8 2" stroke="#1a2740" stroke-width="4" stroke-linecap="round" fill="none"/>
+                  </g>
+                  <path class="eel-card-zap" d="M 130 106 l -10 30 l 20 6 l -16 34 l 22 8 l -18 40" stroke="#ffe066" stroke-width="4" stroke-linecap="round" fill="none"/>
+                  <text x="128" y="44" font-size="15" font-weight="800" fill="#ffe066">UP TO 600 V!</text>
+                  <circle cx="256" cy="76" r="16" fill="#0c1526" stroke="#ffe066" stroke-width="3"/>
+                  <text x="256" y="82" font-size="19" font-weight="800" fill="#ffe066" text-anchor="middle">&#9889;</text>
+                  <path d="M 170 52 l -34 72" stroke="#ffe066" stroke-width="3" stroke-dasharray="5 6" fill="none"/>
+                </svg>
+              </div>
+              <h3>Electric Eel &#9889;&#65039;</h3>
+              <p class="card-tagline">A fish that makes its own electricity &mdash; up to about 600 volts!</p>
+              <p class="card-hint">Tap to flip</p>
+            </div>
+            <div class="card-face card-back">
+              <span class="tap-emoji">&#9889;&#65039;</span>
+              <h4>Surprise!</h4>
+              <p>Special <strong>bioelectric organs</strong> can zap up to <strong>600 volts</strong> &mdash; way more than a house socket! Scientists at Yale &amp; CUNY decoded its genes and dream of <strong>bio-batteries</strong> and nerve-zapping therapies for people.</p>
+              <p class="dive-link-row"><a class="dive-link" href="electric-eel.html">&#129514; Get shocked: tour the Shock Lab</a></p>
             </div>
           </div>
         </article>
@@ -374,6 +662,18 @@
           <h3>Sea Star Regeneration</h3>
           <p>How it regrows whole arms &mdash; and the DNA switches behind it!</p>
           <span class="dive-btn">Dive in! &#8594;</span>
+        </a>
+        <a href="hydra.html" class="dive-card">
+          <span class="dive-emoji">&#129515;</span>
+          <h3>Hydra: The Immortal</h3>
+          <p>Why doesn&rsquo;t this tiny freshwater creature age?</p>
+          <span class="dive-btn">Zoom in! &#8594;</span>
+        </a>
+        <a href="electric-eel.html" class="dive-card">
+          <span class="dive-emoji">&#9989;&#65039;</span>
+          <h3>Electric Eel</h3>
+          <p>How does it make 600 volts of its own electricity?</p>
+          <span class="dive-btn">Get shocked! &#8594;</span>
         </a>
       </div>
     </section>

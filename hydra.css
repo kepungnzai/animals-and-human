@@ -1,0 +1,243 @@
+/* ==========================================================
+   Hydra — The Immortal Pond Lab — green pond / microscope theme
+   Loaded AFTER styles.css, so these styles only affect this page.
+   ========================================================== */
+
+body {
+  background: linear-gradient(180deg, #a9e7c3 0%, #d0f3df 30%, #f2fbf0 100%);
+  color: var(--ink);
+}
+mark { background: #8be13b; color: #1f3a5f; }
+
+.topnav a { background: rgba(255, 255, 255, .75); color: #0f8f6f; }
+.topnav a:hover { background: var(--gold); color: var(--ink); }
+.topnav .nav-quiz { background: #ff8a3c; color: #fff; }
+
+section h2 { color: #0f5c4a; }
+.section-sub { color: #2f7a63; }
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.hy-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 26px;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 22px 70px;
+}
+.hero-text h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); color: #0f5c4a; }
+.hero-sub { color: #2f7a63; font-size: clamp(1.05rem, 2.2vw, 1.28rem); }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+.hero-badge {
+  display: inline-block;
+  margin-top: 22px;
+  background: #fff;
+  border: 3px dashed #17b897;
+  color: var(--ink);
+  font-weight: 700;
+  padding: .5em 1em;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+.hero-hy-svg {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 26px;
+  box-shadow: var(--shadow-big);
+  background: #d0f3df;
+}
+
+/* gentle bob for the whole hydra */
+.hy-float { transform-box: fill-box; transform-origin: center; animation: bob 4s ease-in-out infinite; }
+/* pulsing "stem-cell" sparkles */
+.hy-spark { transform-box: fill-box; transform-origin: center; animation: spark 2s ease-in-out infinite; }
+.hy-spark--2 { animation-delay: .6s; }
+.hy-spark--3 { animation-delay: 1.2s; }
+.hy-label { animation: hy-blink 2.6s ease-in-out infinite; }
+
+/* ==========================================================
+   MEET section
+   ========================================================== */
+.meet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.meet-card {
+  background: #f3fbf2;
+  border: 3px solid #17b897;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform .2s;
+}
+.meet-card:hover { transform: translateY(-5px) rotate(-1deg); }
+.meet-emoji { font-size: 2.3rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.meet-card h3 { font-size: 1.15rem; margin: .3em 0 .2em; color: #0f5c4a; }
+.meet-card p { color: #2f7a63; font-size: .96rem; margin: 0; }
+.meet-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 660px;
+  background: #f3fbf2;
+  border: 3px dashed #ff9a3c;
+  border-radius: 16px;
+  padding: 12px 18px;
+  font-weight: 700;
+  color: #6b3a20;
+}
+
+/* ==========================================================
+   MYSTERY section — why doesn't it age?
+   ========================================================== */
+.mystery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.mystery-card {
+  background: #f6f8ff;
+  border: 3px solid #9b5de5;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+.mystery-card:hover { transform: translateY(-6px) rotate(1deg); box-shadow: var(--shadow-big); }
+.mystery-card--key { border-color: #ffae3c; background: #fff6e8; }
+.mystery-emoji { font-size: 2.3rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.mystery-card h3 { font-size: 1.12rem; margin: .3em 0 .2em; color: #0f5c4a; }
+.mystery-card p { color: #2f7a63; font-size: .96rem; margin: 0; }
+.mystery-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 720px;
+  background: #fff6e8;
+  border: 3px dashed #ffae3c;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-weight: 700;
+  color: #6b3a20;
+}
+.mystery-quote {
+  text-align: center;
+  font-weight: 800;
+  color: #0f8f6f !important;
+  font-size: 1.1rem;
+  background: #e0f6e3;
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+/* ==========================================================
+   LAB section — the three research missions
+   ========================================================== */
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.lab-card {
+  background: #f3fbf2;
+  border: 3px solid #17b897;
+  border-left: 8px solid #ff9a3c;
+  border-radius: 18px;
+  padding: 20px 18px;
+  text-align: left;
+  box-shadow: var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+.lab-card:hover { transform: translateY(-6px) rotate(-1deg); box-shadow: var(--shadow-big); }
+.lab-emoji { font-size: 2.2rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.lab-card h3 { font-size: 1.14rem; margin: .3em 0 .2em; color: #0f5c4a; }
+.lab-card p { color: #2f7a63; font-size: .96rem; margin: 0; }
+.lab-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 720px;
+  background: #f3fbf2;
+  border: 3px dashed #17b897;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-weight: 700;
+  color: #0c4a3d;
+}
+
+/* ==========================================================
+   FUTURE section — what it means for people
+   ========================================================== */
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.future-card {
+  background: #f3fbf2;
+  border: 3px solid #ff9a3c;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform .2s;
+}
+.future-card:hover { transform: translateY(-5px) rotate(1deg); }
+.future-emoji { font-size: 2.3rem; display: inline-block; animation: bob 2.6s ease-in-out infinite; }
+.future-card h3 { font-size: 1.12rem; margin: .3em 0 .2em; color: #0f5c4a; }
+.future-card p { color: #2f7a63; font-size: .96rem; margin: 0; }
+.future-note {
+  text-align: center;
+  margin: 22px auto 0;
+  max-width: 720px;
+  background: #fff6e8;
+  border: 3px dashed #ffae3c;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-weight: 600;
+  color: #6b3a20;
+}
+
+/* ==========================================================
+   QUIZ + FOOTER overrides
+   ========================================================== */
+.quiz-shell { background: #f3fbf2; box-shadow: var(--shadow-big); }
+.quiz-question { color: #0f5c4a; }
+.quiz-count { color: #0f8f6f; }
+.quiz-option { background: #ffffff; }
+.quiz-option.is-correct { background: var(--mint); border-color: var(--green); }
+.quiz-option.is-wrong { background: #ffe3e3; border-color: var(--wrong); }
+.q-feedback--right { background: var(--mint); }
+.q-feedback--wrong { background: #ffe9e9; }
+.site-foot { color: #2f7a63; }
+.site-foot a { color: #0f8f6f; }
+
+/* ==========================================================
+   KEYFRAMES
+   ========================================================== */
+@keyframes spark {
+  0%, 100% { opacity: .2; transform: scale(.7) rotate(0deg); }
+  50%      { opacity: 1; transform: scale(1.15) rotate(12deg); }
+}
+@keyframes hy-blink {
+  0%, 100% { opacity: .6; }
+  50%      { opacity: 1; }
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 960px) {
+  .hy-hero { grid-template-columns: 1fr; }
+  .hero-hy-svg { max-width: 520px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hy-float, .hy-spark { animation: none; opacity: 1; }
+  .meet-emoji, .mystery-emoji, .lab-emoji, .future-emoji { animation: none; }
+}

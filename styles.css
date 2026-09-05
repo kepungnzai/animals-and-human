@@ -606,6 +606,35 @@ mark {
   50%      { transform: translateY(-10px); opacity: .5; }
 }
 
+/* card SVG animations for snake / mole-rat / sea star / hydra / electric eel cards */
+.sn-card-sway { transform-box: fill-box; transform-origin: center; animation: card-sway 3.8s ease-in-out infinite; }
+.sn-card-drop { animation: drop-shake 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.sn-card-drop--2 { animation-delay: .5s; }
+.sn-card-drop--3 { animation-delay: 1s; }
+.sn-card-spark { animation: spin-soft 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.mr-card-rat { transform-box: fill-box; transform-origin: center bottom; animation: bob 2.4s ease-in-out infinite; }
+.mr-card-blink { animation: blink 4s infinite; transform-box: fill-box; transform-origin: center; }
+.ss-card-coral { transform-box: fill-box; transform-origin: center bottom; animation: card-sway 4s ease-in-out infinite; }
+.ss-card-coral--2 { animation-delay: 1.3s; }
+.ss-card-star { transform-box: fill-box; transform-origin: center; animation: card-sway 4.2s ease-in-out infinite; }
+.ss-card-stage { animation: pop-in 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.ss-card-stage--2 { animation-delay: .7s; }
+.hy-card-float { transform-box: fill-box; transform-origin: center bottom; animation: bob 3.2s ease-in-out infinite; }
+.hy-card-spark { animation: blink 3.4s infinite; transform-box: fill-box; transform-origin: center; }
+.hy-card-spark--2 { animation-delay: .8s; }
+.eel-card-swim { transform-box: fill-box; transform-origin: center; animation: card-sway 3.6s ease-in-out infinite; }
+.eel-card-zap { animation: pop-in 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.eel-card-zap--2 { animation-delay: .6s; }
+.eel-card-zap--3 { animation-delay: 1.2s; }
+@keyframes card-sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50%      { transform: rotate(2deg); }
+}
+@keyframes drop-shake {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); opacity: .7; }
+}
+
 /* ==========================================================
    RESPONSIVE
    ====================================================== */
